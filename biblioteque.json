@@ -1,0 +1,13 @@
+{
+    "Liste articles": [
+        {
+            "id": 0,
+            "titre": "Article 1",
+            "date": "2019-01-01",
+            "auteur": "Auteur 1",
+            "tumbnail": "nom.png",
+            "illustration": "nom.png/nom.png",
+            "contenu": "Contenu de l'article 1"
+        }
+    ]
+}
