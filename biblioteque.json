@@ -1,5 +1,5 @@
 {
-    "Liste articles": [
+    "articles": [
         {
             "id": 0,
             "titre": "Article 1",
@@ -7,6 +7,10 @@
             "auteur": "Auteur 1",
             "tumbnail": "nom.png",
             "illustration": "nom.png/nom.png",
+            "tags": [
+                "tag1",
+                "tag2"
+            ],
             "contenu": "Contenu de l'article 1",
             "source": [
                 {
@@ -26,6 +30,10 @@
             "auteur": "Arthur",
             "tumbnail": "nom.png",
             "illustration": "nom.png/nom.png",
+            "tags": [
+              "tech",
+              "bio"
+            ],
             "contenu": "Une Interface cerveau-machine ou ICM est un système permettant une liaison directe entre le cerveau et l’ordinateur, c'est-à-dire sans passer par les nerfs périphériques (reliant cerveau et moelle épinière aux muscles et aux organes du corps). Ces dispositifs ouvrent la porte à énormément d’applications, que ce soit médicale, militaire ou même pour un usage pratique.\n\nCe principe se place en opposition des systèmes qu’on pourrait vulgariser de “indirectes” comme le clavier ou une interaction tactiles. La recherche sur les ICM a commencé dans les années 1970 à l'université de Californie à Los Angeles, et c’est dans les années 1990 qu’elles seront pour la première fois appliquées sur l’Homme.\n\nLe principe de fonctionnement des ICM se base le plus souvent sur un système en boucle fermée comportant six étapes. La collecte et mesure de l’activité cérébrale, le prétraitement servant à éliminer les activités parasites, l’extraction de caractéristiques ou motifs, la classification qui va venir trier les caractéristiques, la traduction en commande de ses caractéristiques et enfin le retour perceptif qui agit comme feedback.\n\nAfin d’enregistrer l’activité cérébrale, il existe différentes méthodes, l’invasif, le semi-invasif et le non-invasif. L’invasif consiste à appliquer les capteurs directement dans le cortex, permettant une grande précision au prix d’un risque de complications élevées. Le semi-invasif consiste à appliquer les capteurs sur la membrane entourant le cerveau, juste sous la boîte crânienne, ce qui génère moins de risques mais fait perdre en précision. Le non-invasif pouvant se représenter comme un casque que l’on pose sur le crâne, offrant une solution certes bien moins précise que les deux précédentes mais aussi bien moins risqué et bien moins cher.\n\nLes applications aujourd’hui des ICM sont limitées et se focalisent sur le domaine médical afin d’aider des personnes paralyser ou ayant perdu un membre ou une fonction cognitive. Ce qui n’empêche pas non plus d’avoir des applications pratiques pour piloter des systèmes automatisés comme les ordinateurs. C’est ici qu’entre en jeu l’Ingénierie Neuromorphique.\n\nL’Ingénierie Neuromorphique est une approche de l’informatique qui s’inspire de la structure ainsi que du fonctionnement du cerveau humain en utilisant des neurones artificiels physiques pour effectuer des calculs. Elle est basée sur l'hypothèse que le cerveau humain, que l’on peut représenter comme un système informatique très puissant, est capable de traiter très efficacements les informations.\n\nLe principal avantage de l’Ingénierie Neuromorphique est la manière de traiter l’information très similaire au cerveau, ce qui permettrait une compatibilité accrue ainsi qu’un éventail de possibilités bien plus grand. Comme dit précédemment cela pourrait être une clé dans l’élaboration de solutions complexes afin d’aider les personnes souffrants de handicaps.\n\nMais allons plus loin et imaginons, de manière complètement hypothétique, ce que pourrait être le futur avec cette technologie, des ordinateurs avec lesquels on n’intéragit plus avec des claviers et des souris, des voitures qu’on ne conduirait plus avec un volant, des mails qu’on ne recevrait plus dans une boîte electronique, des commandes qu’on n’effectuerai plus sur des sites marchands, des contrôles d’identité où on ne présenterait plus une carte physique, des paiments entièrements dématérialisé, une vie que l’on contrôlerait par le pouvoir de notre cerveau.\n\nBien que l’on puisse imaginer les immenses et bénéfiques avancées technologiques permettant de propulser l’idée d’un monde connecté, pratique et avancé hors de la simple science fiction, il nous faut aussi nous poser des questions. Nous dirigerons-nous vers cette idée d’un monde utopiste ou verrons-nous une société nébulaire ou chacun est dépendant et contrôlé par la technologie.\n\nNous retrouverons-nous dans une situation similaire à celle des épisodes “The Entire History of You” (s1e3) et “Arkangel” (s4e2) de la série Black Mirror où respectivement chaque personne est équipée d’une puce permettant de retracer ses souvenirs et l’autre un implant permettant de voir et d’entendre au travers des yeux de quelqu’un.\n\nCela soulève également des questions sur la conscience et le principe même de réalité, est-ce que la certitude pourrait exister dans un monde tel que celui-ci. C’est la peur qui nous pousse à adopter le péssimisme face à de telles avancées, ce qui freine le progrès technologique mais, dans certains cas, ne vaut-il pas mieux être patient que de se retrouver trop vite débordé ou même emprisonné dans une situation qui a échappé à notre contrôle.\n\nFaisons l’effort de voir les choses avec pragmatisme, posons-nous les bonnes questions et souvenons-nous que peu importe la situation, peu importe les chances, il y a toujours de l’espoir.",
             "source": [
               {
