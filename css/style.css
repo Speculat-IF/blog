@@ -75,52 +75,52 @@ header input::placeholder {
     color: #FFFFFF;
 }
 
-/* Main */
+/* Home Page */
 
-main {
+#homepage {
     width: 100%;
 }
 
-main section:first-child {
+#homepage section:first-child {
     height: 110%;
     display: flex;
 }
 
-main section:first-child h1 {
+#homepage section:first-child h1 {
     font-size: 7rem;
     margin: 0 auto;
     margin-top: 20%;
 }
 
-main section:first-child img {
+#homepage section:first-child img {
     width: auto;
     height: 90vh;
     object-fit: cover;
 }
 
-main section:last-child {
+#homepage section:last-child {
     margin-top: 30px;
 }
 
-main section:last-child h2 {
+#homepage section:last-child h2 {
     font-size: 3rem;
     margin: 0 auto;
     margin-top: 20px;
     padding-left: 30px; 
 }
 
-main section:last-child h2>span {
+#homepage section:last-child h2>span {
     color: #AE0000;
 }
 
-main section:last-child #cards {
+#homepage section:last-child #cards {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
 }
 
-main section:last-child #cards .card {
+#homepage section:last-child #cards .card {
     width: 400px;
     height: 500px;
     background-color: purple;
@@ -135,18 +135,24 @@ main section:last-child #cards .card {
     padding-bottom: 30px;
 }
 
-main section:last-child #cards .card:hover {
+#homepage section:last-child #cards .card:hover {
     cursor: pointer;
 }
 
-main section:last-child #cards .card h3 {
+#homepage section:last-child #cards .card h3 {
     font-size: 1.5rem;
 }
 
-.tag {
+#homepage .tag {
     background-color: #AE0000;
     padding: 5px 10px;
     border-radius: 50px;
     font-size: 1.2rem;
     width: fit-content;
 }
+
+/* Blog Page */
+
+/* Contacte Page */
+
+/* Footer */
