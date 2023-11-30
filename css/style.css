@@ -1,0 +1,134 @@
+/* Global */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    width: 100vw;
+    background-color: #202020;
+    color: #FFFFFF;
+}
+
+/* Header */
+
+header {
+    z-index: 1;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #1E1E1E;
+    width: 80%;
+    height: 90px;
+    display: flex;
+    gap: 25%;
+    margin: 0 auto;
+    border-radius: 0% 0% 30px 30px;
+
+}
+
+header section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+}
+
+header section a {
+    text-decoration: none;
+    color: #FFFFFF;
+    font-size: 1.4rem;
+    margin-left: 20px;
+}
+
+header section a:hover {
+    color: #AE0000;
+}
+
+header section:nth-child(2) div{
+    border: 1px solid #FFFFFF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+header section:nth-child(2) img:hover {
+    cursor: pointer;
+}
+
+header input {
+    border: none;
+    outline: none;
+    background-color: #1E1E1E;
+    color: #FFFFFF;
+    font-size: 1.2rem;
+}
+
+header input::placeholder {
+    color: #FFFFFF;
+}
+
+/* Main */
+
+main {
+    width: 100%;
+    height: 80vh;
+}
+
+main section:first-child {
+    height: 110%;
+    display: flex;
+}
+
+main section:first-child h1 {
+    font-size: 7rem;
+    margin: 0 auto;
+    margin-top: 20%;
+}
+
+main section:first-child img {
+    width: auto;
+    height: 100%;
+    object-fit: cover;
+}
+
+main section:last-child {
+    margin-top: 50px;
+}
+
+main section:last-child h2 {
+    font-size: 3rem;
+    margin: 0 auto;
+    margin-top: 20px;
+    padding-left: 30px; 
+}
+
+main section:last-child h2>span {
+    color: #AE0000;
+}
+
+main section:last-child #cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+main section:last-child #cards .card {
+    width: 400px;
+    height: 500px;
+    background-color: purple;
+    margin: 20px;
+    padding: 10px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    transition: 0.5s;
+}
