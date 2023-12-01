@@ -1,5 +1,5 @@
 /* Afficher les articles sur la page d'accueil */
-if (window.location.href.includes("index.html")) {
+if (window.location.href.includes("index.html") || window.location.href.includes("https://speculat-if.github.io/blog/")) {
     const url ="https://raw.githubusercontent.com/Speculat-IF/blog/main/biblioteque.json"
     fetch(url)
         .then((response) => response.json())
@@ -43,31 +43,28 @@ if (window.location.href.includes("index.html")) {
 /* menu deroulant */
 
 const downbtn = document.getElementById("down");
-    const header = document.querySelector("header");
-    const section1 = header.querySelector("section:nth-child(1)");
-    const section1Nav = section1.querySelector("nav");
-
-    downbtn.addEventListener("click", () => {
-        if (header.classList.contains("collapsed")) {
-            // Expand header
-            header.classList.remove("collapsed");
-            header.classList.add("expanded");
-            section1.style.display = "flex";
-            section1.style.flexDirection = "column";
-            section1.style.gap = "10%";
-            section1Nav.style.display = "flex";
-            section1Nav.style.flexDirection = "column";
-            section1Nav.style.gap = "20px";
-            downbtn.style.transform = "rotate(180deg)";
-        } else {
-            // Collapse header
-            header.classList.remove("expanded");
-            header.classList.add("collapsed");
-            section1.style.flexDirection = "row";
-            section1.style.gap = "25%";
-            section1Nav.style.display = "none";
-            section1Nav.style.flexDirection = "row";
-            section1Nav.style.gap = "0";
-            downbtn.style.transform = "rotate(0deg)";
-        }
-    });
+const header = document.querySelector("header");
+const section1 = header.querySelector("section:nth-child(1)");
+const section1Nav = section1.querySelector("nav");
+downbtn.addEventListener("click", () => {
+    if (header.classList.contains("collapsed")) {
+        header.classList.remove("collapsed");
+        header.classList.add("expanded");
+        section1.style.display = "flex";
+        section1.style.flexDirection = "column";
+        section1.style.gap = "10%";
+        section1Nav.style.display = "flex";
+        section1Nav.style.flexDirection = "column";
+        section1Nav.style.gap = "20px";
+        downbtn.style.transform = "rotate(180deg)";
+    } else {
+        header.classList.remove("expanded");
+        header.classList.add("collapsed");
+        section1.style.flexDirection = "row";
+        section1.style.gap = "25%";
+        section1Nav.style.display = "none";
+        section1Nav.style.flexDirection = "row";
+        section1Nav.style.gap = "0";
+        downbtn.style.transform = "rotate(0deg)";
+    }
+});
