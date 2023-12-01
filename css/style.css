@@ -22,7 +22,7 @@ header {
     top: 0;
     left: 50%;
     transform: translateX(-50%);
-    background-color: #1E1E1E;
+    background-color: #202020;
     width: 80%;
     height: 90px;
     display: flex;
@@ -280,9 +280,9 @@ header #down {
     gap: 20px;
 }
 
-#articlepage div:first-child {
-    background-color: aqua;
-}
+/* #articlepage div:first-child {
+     background-color: aqua; 
+}*/
 
 #articlepage div:first-child h1{
     font-size: 4rem;
@@ -293,7 +293,7 @@ header #down {
 }
 
 #articlepage div:nth-child(2) {
-    background-color: chartreuse;
+    /* background-color: chartreuse; */
     display: flex;
     flex-direction: row;
 }
@@ -307,7 +307,7 @@ header #down {
 }
 
 #articlepage div:nth-child(3) {
-    background-color: coral;
+    /* background-color: coral; */
     display: flex;
     flex-direction: row;
 }
@@ -320,8 +320,8 @@ header #down {
     padding: 10px;
 }
 
-#articlepage div:nth-child(4) {
+/* #articlepage div:nth-child(4) {
     background-color: purple;
-}
+} */
 
 /* A propos */
