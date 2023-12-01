@@ -1,5 +1,4 @@
 /* menu deroulant */
-
 const downbtn = document.getElementById("down");
 const header = document.querySelector("header");
 const section1 = header.querySelector("section:nth-child(1)");
@@ -26,6 +25,17 @@ downbtn.addEventListener("click", () => {
         downbtn.style.transform = "rotate(0deg)";
     }
 });
+
+/* Array des tags */
+const tagcolor = {
+    "Bio": "green",
+    "IA": "grey",
+    "Cyborg": "yellow",
+    "Quantique": "orange",
+    "Nanotech": "red",
+    "Espace": "blue",
+    "Social": "pink"
+};
 
 
 /* Afficher les articles sur la page d'accueil */
@@ -54,6 +64,7 @@ if (window.location.href.includes("index.html") || window.location.href.includes
                 let tagItem = document.createElement("span");
                 tagItem.innerHTML = data.articles[i].tags[j];
                 tag.appendChild(tagItem);
+                tag.classList.add(tagcolor[data.articles[i].tags[j]]);
                 alltags.appendChild(tag);
             }
             alltags.style.display = "flex";

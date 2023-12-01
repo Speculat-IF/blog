@@ -165,7 +165,7 @@ header #down {
     width: 400px;
     height: 500px;
     background-color: #AE0000;
-    background-image: url(../img/Barghest.png);
+    background-image: url(../img/Logo_blanc.png);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: top;
@@ -190,11 +190,39 @@ header #down {
 }
 
 #homepage .tag {
-    background-color: #AE0000;
+    background-color: #1E1E1E;
     padding: 5px 10px;
     border-radius: 50px;
     font-size: 1.2rem;
     width: fit-content;
+}
+
+.green {
+    background-color: #00FF00 !important;
+}
+
+.grey {
+    background-color: #808080 !important;
+}
+
+.yellow {
+    background-color: #FFFF00 !important;
+}
+
+.orange {
+    background-color: #FFA500 !important;
+}
+
+.red {
+    background-color: #FF0000 !important;
+}
+
+.blue {
+    background-color: #0000FF !important;
+}
+
+.pink {
+    background-color: #FFC0CB !important;
 }
 
 /* Responsive Home Page */
