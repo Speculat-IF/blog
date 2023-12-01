@@ -11,4 +11,4 @@
 - Responsive :)
 
 ## JS
-- Si tu t'appelle pas Pierre-Louis Sans tu fait sur un autre branch et puis tu ouvre une merge request que JE validerais.
+- Si tu t'appelle pas Pierre-Louis Sans tu fait sur une autre branch et puis tu ouvre une merge request que JE validerais.
