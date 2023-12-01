@@ -30,7 +30,7 @@ downbtn.addEventListener("click", () => {
 const tagcolor = {
     "Bio": "green",
     "IA": "grey",
-    "Cyborg": "yellow",
+    "Cyborg": "purple",
     "Quantique": "orange",
     "Nanotech": "red",
     "Espace": "blue",
@@ -98,7 +98,51 @@ if (window.location.href.includes("article.html")) {
         let id = searchParams.get("id");
         let searchedArticle = data.articles.find((article) => article.id == id);
         console.log(searchedArticle);
+        let firstdiv = document.createElement("div");
+        let seconddiv = document.createElement("div");
+        let thirddiv = document.createElement("div");
+        let fourthdiv = document.createElement("div");
+
+        let titre = document.createElement("h1");
+        titre.innerHTML = searchedArticle.titre;
+        let underTitre = document.createElement("h2");
+        underTitre.innerHTML = searchedArticle.date + " - " + searchedArticle.auteur;
+        firstdiv.appendChild(titre);
+        firstdiv.appendChild(underTitre);
+
+        let halftext = document.createElement("p");
+        halftext.innerHTML = searchedArticle.contenu.split(" ").slice(0,searchedArticle.contenu.split(" ").length/2).join(" ");
+        let firstillustration = document.createElement("img");
+        firstillustration.src = searchedArticle.illustration;
+        seconddiv.appendChild(halftext);
+        seconddiv.appendChild(firstillustration);
+
+        let secondhalftext = document.createElement("p");
+        secondhalftext.innerHTML = searchedArticle.contenu.split(" ").slice(searchedArticle.contenu.split(" ").length/2,searchedArticle.contenu.split(" ").length).join(" ");
+        let secondillustration = document.createElement("img");
+        secondillustration.src = searchedArticle.illustration;
+        thirddiv.appendChild(secondillustration);
+        thirddiv.appendChild(secondhalftext);
         
+        let h2 = document.createElement("h2");
+        h2.innerHTML = "Sources :";
+        let ul = document.createElement("ul");
+        let sourcesLength = searchedArticle.source.length;
+        for (let i = 0; i < sourcesLength; i++) {
+            let li = document.createElement("li");
+            let a = document.createElement("a");
+            a.innerHTML = searchedArticle.source[i].lien;
+            li.appendChild(a);
+            ul.appendChild(li);
+        }
+        fourthdiv.appendChild(h2);
+        fourthdiv.appendChild(ul);
+
+        let articlepage = document.getElementById("articlepage");
+        articlepage.appendChild(firstdiv);
+        articlepage.appendChild(seconddiv);
+        articlepage.appendChild(thirddiv);
+        articlepage.appendChild(fourthdiv);
     })
     .catch((error) => {
         console.error('Error fetching data:', error);
