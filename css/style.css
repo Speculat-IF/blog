@@ -114,6 +114,8 @@ header #down {
     }
 }
 
+
+
 /* Home Page */
 
 #homepage {
@@ -213,6 +215,23 @@ header #down {
         margin-right: 20px;
     }
 }
+
+@media (max-width: 800px){
+    #homepage section:first-child img {
+        height: auto;
+        margin-top: 45px;
+    }
+}
+@media (max-width: 430px){
+    #homepage section:first-child {
+        display: none;
+    }
+
+    #homepage section:last-child h2 {
+        margin-top: 110px;
+    }
+}
+
 
 
 /* Blog Page */
