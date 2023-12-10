@@ -28,11 +28,9 @@ downbtn.addEventListener("click", () => {
 
 /* Array des tags */
 const tagcolor = {
-    "Bio": "green",
+    "Biologique": "green",
     "IA": "grey",
-    "Cyborg": "purple",
     "Quantique": "orange",
-    "Nanotech": "red",
     "Espace": "blue",
     "Social": "pink"
 };
