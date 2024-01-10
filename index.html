@@ -8,34 +8,92 @@
     <title>Speculat-IF Home page</title>
 </head>
 <body>
-    <header>
-        <section>
-            <img src="img/Logo_blanc.png" alt="Notre Logo">
-            <nav>
-                <a href="index.html">Acceuil</a>
+    <nav>
+        <div>
+            <div class="logo">
+                <img src="images/logo_noir.png" alt="Notre Logo">
+                <p>Speculatif</p>
+            </div>
+            <div class="menu"> 
+                <a href="index.html" class="active" >Accueil</a>
                 <a href="articles.html">Nos Articles</a>
                 <a href="apropos.html">A propos</a>
-            </nav>
-            <img id="down" src="img/menu_deroulant.png" alt="menu déroulant">
-        </section>
-        <section>
-            <div>
-                <img src="img/search_icon.svg" alt="Search Logo">
+            </div>
+        </div>
+        <div>
+            <div class="search">
+                <img src="images/search.svg" alt="Search Logo">
                 <input type="text" placeholder="Rechercher...">
             </div>
-        </section>
-    </header>
-    <main id="homepage">
-        <section>
-            <img src="img/home_bg.png" alt="Background sans importance">
-            <h1>Speculat-IF</h1>
-        </section>
-        <section>
-            <h2>Nos <span>Articles</span> récents :</h2>
-            <div id="cards">
-                
+            <div class="d-l">
+                <img src="images/solar_moon-broken.svg" alt="Moon Logo">
+            </div>
+        </div>
+    </nav>
+    <main>
+        <header>
+            <h1>Bienvenue</h1>
+            <p>Qui somme nous ? Spéculat-IF est une agence web qui simplifie les nouvelles technologies liées à l'informatique en imaginant une vision hypothétique et subjective du futur façonné par ces avancées. Explorez nos articles dans nos catégories les plus populaires ci-dessous :</p>
+            <div class="cats">
+                <button class="cat">
+                    <p>Inteligence Artificiel</p>
+                </button>
+                <button class="cat">
+                    <p>Technologie Quantique</p>
+                </button>
+                <button class="cat">
+                    <p>Biologie</p>
+                </button>
+            </div>
+        </header>
+        <section class="most_recent">
+            <div class="title">
+                <h2>Retrouvez nos articles les plus récents :</h2>
+                <a href="articles.html" style="text-decoration: none;"><p>Voir tous nos articles <img src="images/arrow.svg" alt="arrow"></p></a>
+            </div>
+            <div class="posts">
+                <div class="post">
+                    <img class="tumbnail" src="" alt="image tumbnail">
+                    <div class="infos">
+                        <div>
+                            <p class="tags"></p>
+                            <p class="date"></p>
+                        </div>
+                        <h3 class="titre"></h3>
+                        <p class="prevue"></p>
+                    </div>
+                </div>
+                <div class="others">
+                    <div class="post">
+                        <img class="tumbnail" src="" alt="image tumbnail">
+                        <div class="infos">
+                            <div>
+                                <p class="tags"></p>
+                                <p class="date"></p>
+                            </div>
+                            <h3 class="titre"></h3>
+                            <p class="desc prevue"></p>
+                        </div>
+                    <div class="post">
+                        <img class="tumbnail" src="" alt="image tumbnail">
+                        <div class="infos">
+                            <div>
+                                <p class="tags"></p>
+                                <p class="date"></p>
+                            </div>
+                            <h3 class="titre"></h3>
+                            <p class="desc prevue"></p>
+                        </div>
+                    </div>
+                </div>
+                </div>
             </div>
         </section>
     </main>
+    <footer>
+        <h2>Lorem, ipsum dolor.</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi eius consequuntur architecto porro aspernatur aut! Eveniet laudantium fuga pariatur voluptatum?</p>
+        <button>Lorem, ipsum.</button>
+    </footer>
 </body>
 </html>
