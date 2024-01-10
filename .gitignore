@@ -1,0 +1,6 @@
+.DS_Store
+.env
+node_modules/
+.IdeaIC2019.2/
+.idea/
+
