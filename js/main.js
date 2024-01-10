@@ -4,7 +4,7 @@ const tagcolor = {
     "IA": "red",
     "Quantique": "orange",
     "Espace": "blue",
-    "Social": "pink"
+    "Social": "pink",
 };
 
 const auteur = ['Nalïth', 'MisterRedHat', 'Ethra', 'Lucee', 'Ali', 'Zorgos', 'Dragibo']
@@ -12,6 +12,7 @@ const auteur = ['Nalïth', 'MisterRedHat', 'Ethra', 'Lucee', 'Ali', 'Zorgos', 'D
 const url ="https://raw.githubusercontent.com/Speculat-IF/blog/main/biblioteque.json"
 
 const urlImage = "https://github.com/Speculat-IF/blog/blob/main/imgArticle/"
+
 
 
 /* Js Page Accueil */
@@ -41,9 +42,12 @@ if (window.location.href.includes("index.html") || window.location.href.includes
             if (postPrevue != null) {
                 postPrevue.innerHTML = reverse[i].contenu.split(" ").slice(0,50).join(" ") + "...";
             }
-            let postTumbnail = post.querySelector(".tumbnail");
+            let postTumbnails = post.querySelectorAll(".tumbnail");
             img.onerror = () => window.href.location = "https://developer.mozilla.org/fr/docs/Web/HTTP/Status/418"; img.src = imagePath;
-            postTumbnail.src = urlImage + reverse[i].tumbnail;
+            postTumbnails.forEach((tumbnail) => {
+                tumbnail.src = urlImage + reverse[i].tumbnail + '?raw=true';
+                tumbnail.alt = 'tubnail de l\'article';
+            });
             post.addEventListener("click", () => {
                 window.location.href = "article.html?id=" + reverse[i].id;
             });
