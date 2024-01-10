@@ -575,6 +575,34 @@ main {
     }
   }
 
+  @media screen and (max-width: 768px) {
+
+    .article {
+      display: flex;
+      padding: 0 1.75rem;
+      flex-direction: column;
+      gap: 2rem;
+  
+      .title {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: start;
+  
+        h1 {
+          font-size: 1rem;
+        }
+      }
+  
+      .content {
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(1, 2fr);
+        gap: 2rem;
+      }
+    }
+  }
+
   .about {
     display: flex;
     flex-direction: row;
@@ -698,6 +726,134 @@ main {
       }
     }
   }
+
+  @media screen and (max-width: 768px) {
+
+    .about {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      padding: 0 8.75rem;
+      gap: 2rem;
+  
+      .socials {
+        display: flex;
+        flex-direction: column;
+        background-color: $color-primary;
+        color: white;
+        width: 30%;
+        border-radius: 0.4rem;
+        padding: 3rem 2rem;
+        gap: 2rem;
+  
+        div {
+          display: flex;
+          flex-direction: column;
+  
+          h3 {
+            font-size: 1.5rem;
+            font-weight: 700;
+          }
+  
+          p {
+            font-size: 0.8rem;
+            font-weight: 400;
+          }
+        }
+  
+        .social {
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+          gap: 1rem;
+  
+          img {
+            width: 5vh;
+            height: 5vh;
+          }
+  
+          a {
+            font-size: 0.8rem;
+            font-weight: 500;
+            color: white;
+            text-decoration: none;
+  
+            &:hover {
+              text-decoration: underline;
+              text-underline-offset: 0.2rem;
+            }
+          }
+        }
+      }
+  
+      form {
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+        width: 60%;
+  
+        div {
+          display: flex;
+          flex-direction: row;
+          justify-content: space-between;
+          gap: 1rem;
+          width: 100%;
+        }
+  
+        .champ {
+          display: flex;
+          flex-direction: column;
+          gap: 0.5rem;
+  
+          label {
+            font-size: 0.8rem;
+            font-weight: 400;
+            color: $color-tertiary;
+          }
+  
+          input, select, textarea {
+            padding: 0.75rem 1rem;
+            color: $black;
+            border: none;
+            border-bottom: 1.5px solid $black;
+            font-size: 0.8rem;
+            font-weight: 400;
+            width: 100%;
+            outline: none;
+            align-items: center;
+            justify-content: center;
+  
+            &::placeholder {
+              color: $black;
+            }
+          }
+  
+          input:active, input:focus, textarea:active, textarea:focus, select:active, select:focus {
+            outline: none;
+          }
+        
+        }
+  
+        .valid {
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+          gap: 1rem;
+  
+          input {
+            background-color: $color-primary;
+            color: white;
+            border: none;
+            padding: 0.5rem 3rem;
+            border-radius: 0.3rem;
+            font-weight: 700;
+            font-size: 1rem;
+          }
+        }
+      }
+    }
+  }
+
 }
 
 footer {

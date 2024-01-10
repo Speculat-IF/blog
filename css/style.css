@@ -492,6 +492,29 @@ main .article .srcs p:hover {
   cursor: pointer;
   text-decoration: underline;
 }
+@media screen and (max-width: 768px) {
+  main .article {
+    display: flex;
+    padding: 0 1.75rem;
+    flex-direction: column;
+    gap: 2rem;
+  }
+  main .article .title {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: start;
+  }
+  main .article .title h1 {
+    font-size: 1rem;
+  }
+  main .article .content {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(1, 2fr);
+    gap: 2rem;
+  }
+}
 main .about {
   display: flex;
   flex-direction: row;
@@ -599,6 +622,116 @@ main .about form .valid input {
   border-radius: 0.3rem;
   font-weight: 700;
   font-size: 1rem;
+}
+@media screen and (max-width: 768px) {
+  main .about {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0 8.75rem;
+    gap: 2rem;
+  }
+  main .about .socials {
+    display: flex;
+    flex-direction: column;
+    background-color: #2F4DDB;
+    color: white;
+    width: 30%;
+    border-radius: 0.4rem;
+    padding: 3rem 2rem;
+    gap: 2rem;
+  }
+  main .about .socials div {
+    display: flex;
+    flex-direction: column;
+  }
+  main .about .socials div h3 {
+    font-size: 1.5rem;
+    font-weight: 700;
+  }
+  main .about .socials div p {
+    font-size: 0.8rem;
+    font-weight: 400;
+  }
+  main .about .socials .social {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1rem;
+  }
+  main .about .socials .social img {
+    width: 5vh;
+    height: 5vh;
+  }
+  main .about .socials .social a {
+    font-size: 0.8rem;
+    font-weight: 500;
+    color: white;
+    text-decoration: none;
+  }
+  main .about .socials .social a:hover {
+    text-decoration: underline;
+    text-underline-offset: 0.2rem;
+  }
+  main .about form {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    width: 60%;
+  }
+  main .about form div {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 1rem;
+    width: 100%;
+  }
+  main .about form .champ {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  main .about form .champ label {
+    font-size: 0.8rem;
+    font-weight: 400;
+    color: rgba(0, 0, 0, 0.5);
+  }
+  main .about form .champ input, main .about form .champ select, main .about form .champ textarea {
+    padding: 0.75rem 1rem;
+    color: #1E1E1E;
+    border: none;
+    border-bottom: 1.5px solid #1E1E1E;
+    font-size: 0.8rem;
+    font-weight: 400;
+    width: 100%;
+    outline: none;
+    align-items: center;
+    justify-content: center;
+  }
+  main .about form .champ input::-moz-placeholder, main .about form .champ select::-moz-placeholder, main .about form .champ textarea::-moz-placeholder {
+    color: #1E1E1E;
+  }
+  main .about form .champ input::placeholder, main .about form .champ select::placeholder, main .about form .champ textarea::placeholder {
+    color: #1E1E1E;
+  }
+  main .about form .champ input:active, main .about form .champ input:focus, main .about form .champ textarea:active, main .about form .champ textarea:focus, main .about form .champ select:active, main .about form .champ select:focus {
+    outline: none;
+  }
+  main .about form .valid {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1rem;
+  }
+  main .about form .valid input {
+    background-color: #2F4DDB;
+    color: white;
+    border: none;
+    padding: 0.5rem 3rem;
+    border-radius: 0.3rem;
+    font-weight: 700;
+    font-size: 1rem;
+  }
 }
 
 footer {
