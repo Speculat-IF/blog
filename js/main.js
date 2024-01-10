@@ -7,7 +7,7 @@ const tagcolor = {
     "Social": "pink"
 };
 
-const auteur = ['Ethan', 'Arthur', 'Ethra', 'Lucee', 'Ali', 'Pierre-Louis', 'Dragibo']
+const auteur = ['Nalïth', 'MisterRedHat', 'Ethra', 'Lucee', 'Ali', 'Zorgos', 'Dragibo']
 
 const url ="https://raw.githubusercontent.com/Speculat-IF/blog/main/biblioteque.json"
 
