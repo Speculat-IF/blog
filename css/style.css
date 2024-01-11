@@ -147,7 +147,7 @@ main {
   display: flex;
   flex-direction: column;
   gap: 20vh;
-  margin: 0 0 20vh 0;
+  margin: 20vh 0;
 }
 @media screen and (max-width: 768px) {
   main {
@@ -678,6 +678,10 @@ main .about form .valid input {
   main .about form .valid input {
     width: 100%;
   }
+}
+
+.articles {
+  margin-top: 0;
 }
 
 footer {
