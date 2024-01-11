@@ -26,6 +26,7 @@ nav {
   top: 0;
   background-color: white;
   z-index: 10;
+  height: 9vh;
 
   div:nth-child(1) {
     display: flex;
@@ -182,7 +183,7 @@ main {
   display: flex;
   flex-direction: column;
   gap: 20vh;
-  margin: 20vh 0;
+  margin: 0 0 20vh 0;
 
   @media screen and (max-width: 768px) {
     gap: 10vh;
@@ -412,8 +413,8 @@ main {
     gap: 2rem;
     background-color: $color-secondary;
     padding: 1.2rem 8.75rem;
-    position: relative;
-    margin-top: -9.5vh;
+    position: sticky;
+    top: 9vh;
 
     .active {
       color: $color-primary;
@@ -445,7 +446,7 @@ main {
     width: 100%;
     gap: 2rem;
     justify-content: center;
-    text-align: center;
+    text-align: left;
     margin-top: 15vh;
 
     .posts {
@@ -462,7 +463,7 @@ main {
 
         img {
           width: 100%;
-          height: 100%;
+          height: 30vh;
           object-fit: cover;
           border-radius: 0.4rem;
         }
@@ -522,7 +523,7 @@ main {
       width: 100%;
       gap: 2rem;
       justify-content: center;
-      text-align: center;
+      text-align: left;
       margin-top: 15vh;
 
       .posts {
