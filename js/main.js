@@ -110,9 +110,10 @@ if (window.location.href.includes("articles.html")) {
     .then((response) => response.json())
     .then((allArticle) => {
       let dataLength = allArticle.articles.length;
+      var reverse = allArticle.articles.reverse();
       let posts = document.querySelector(".posts");
-      for (let i = 1; i < dataLength; i++) {
-        let curentArticle = allArticle.articles[i];
+      for (let i = 0; i < dataLength; i++) {
+        let curentArticle = reverse[i];
         let post = document.createElement("div");
         post.classList.add("post");
         var imagePath = "images/Barghest.png";

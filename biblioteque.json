@@ -1,29 +1,6 @@
 {
     "articles": [
         {
-            "id": 0,
-            "titre": "Article 1",
-            "date": "01/01/2018",
-            "auteur": "Auteur 1",
-            "tumbnail": "nom.png",
-            "illustration": "nom.png/nom.png",
-            "tags": [
-                "tag1",
-                "tag2"
-            ],
-            "contenu": "Contenu de l'article 1",
-            "source": [
-                {
-                    "nom": "Source 1",
-                    "lien": "lien1"
-                },
-                {
-                    "nom": "Source 2",
-                    "lien": "lien2"
-                }
-            ]
-        },
-        {
             "id": 1,
             "titre": "Ingénierie neuromorphique : L'avenir des interfaces cerveau-machine",
             "date": "02/12/2023",
