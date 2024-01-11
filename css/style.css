@@ -345,7 +345,7 @@ main .all {
   width: 100%;
   gap: 2rem;
   justify-content: center;
-  text-align: center;
+  text-align: left;
   margin-top: 15vh;
 }
 main .all .posts {
