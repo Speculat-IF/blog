@@ -22,6 +22,19 @@ const url =
 
 const urlImage = "https://github.com/Speculat-IF/blog/blob/main/imgArticle/";
 
+function separateStrings(baseString, delimiter) {
+    const index = baseString.indexOf(delimiter);
+    if (index !== -1) {
+      const firstString = baseString.slice(0, index + delimiter.length);
+      const secondString = baseString.slice(index + delimiter.length);
+      return [firstString, secondString];
+    } else {
+      return [baseString, ''];
+    }
+}
+
+const delimiter =' : ';
+
 /* Js Page Accueil */
 if (
   window.location.href.includes("index.html") ||
@@ -38,7 +51,12 @@ if (
       for (let i = 0; i < 3; i++) {
         let post = posts[i];
         let postTitle = post.querySelector(".titre");
-        postTitle.innerHTML = reverse[i].titre;
+        let span = document.createElement("span");
+        let titre = reverse[i].titre;
+        let [firstString, secondString] = separateStrings(titre, delimiter);
+        span.innerHTML = firstString;
+        postTitle.appendChild(span);
+        postTitle.innerHTML += secondString;
         let postDate = post.querySelector(".date");
         postDate.innerHTML = reverse[i].date;
         let postTags = post.querySelector(".tags");
@@ -52,7 +70,7 @@ if (
         let postPrevue = post.querySelector(".prevue");
         if (postPrevue != null) {
           postPrevue.innerHTML =
-            reverse[i].contenu.split(" ").slice(0, 50).join(" ") + "...";
+            reverse[i].contenu.split(" ").slice(0, 30).join(" ") + "...";
         }
         let postTumbnails = post.querySelectorAll(".tumbnail");
         img.onerror = () =>
@@ -110,7 +128,12 @@ if (window.location.href.includes("articles.html")) {
         info.classList.add("info");
         let data = document.createElement("div");
         let titre = document.createElement("h3");
-        titre.innerHTML = curentArticle.titre;
+        let span = document.createElement("span");
+        let titreString = curentArticle.titre;
+        let [firstString, secondString] = separateStrings(titreString, delimiter);
+        span.innerHTML = firstString;
+        titre.appendChild(span);
+        titre.innerHTML += secondString;
         let date = document.createElement("p");
         date.innerHTML = curentArticle.date;
         let auteur = document.createElement("p");
@@ -207,42 +230,47 @@ if (window.location.href.includes("article.html")) {
   fetch(url)
     .then((response) => response.json())
     .then((data) => {
-      // console.log(data);
-      let searchParams = new URLSearchParams(window.location.search);
-      let id = searchParams.get("id");
-      let searchedArticle = data.articles.find((article) => article.id == id);
-      console.log(searchedArticle);
-      let titre = document.querySelector(".titre");
-      titre.innerHTML = searchedArticle.titre;
-      let date = document.querySelector(".date");
-      date.innerHTML = searchedArticle.date;
-      let auteur = document.querySelector(".auteur");
-      auteur.innerHTML = searchedArticle.auteur;
-      let textP1 = document.querySelector(".textP1");
-      textP1.innerHTML =
-        searchedArticle.contenu
-          .split(" ")
-          .slice(0, searchedArticle.contenu.split(" ").length / 2)
-          .join(" ") + "...";
-      let textP2 = document.querySelector(".textP2");
-      textP2.innerHTML =
-        "..." +
-        searchedArticle.contenu
-          .split(" ")
-          .slice(
-            searchedArticle.contenu.split(" ").length / 2,
-            searchedArticle.contenu.split(" ").length
-          )
-          .join(" ");
-      let srcs = document.querySelector(".srcs");
-      searchedArticle.source.forEach((source) => {
-        let p = document.createElement("p");
+        // console.log(data);
+        let searchParams = new URLSearchParams(window.location.search);
+        let id = searchParams.get("id");
+        let searchedArticle = data.articles.find((article) => article.id == id);
+        console.log(searchedArticle);
+        let titre = document.querySelector(".titre");
         let span = document.createElement("span");
-        span.innerHTML = source.nom;
-        p.appendChild(span);
-        p.innerHTML += " : " + source.lien;
-        srcs.appendChild(p);
-      });
+        let titreString = searchedArticle.titre;
+        let [firstString, secondString] = separateStrings(titreString, delimiter);
+        span.innerHTML = firstString;
+        titre.appendChild(span);
+        titre.innerHTML += secondString;
+        let date = document.querySelector(".date");
+        date.innerHTML = searchedArticle.date;
+        let auteur = document.querySelector(".auteur");
+        auteur.innerHTML = searchedArticle.auteur;
+        let textP1 = document.querySelector(".textP1");
+        textP1.innerHTML =
+            searchedArticle.contenu
+            .split(" ")
+            .slice(0, searchedArticle.contenu.split(" ").length / 2)
+            .join(" ") + "...";
+        let textP2 = document.querySelector(".textP2");
+        textP2.innerHTML =
+            "..." +
+            searchedArticle.contenu
+            .split(" ")
+            .slice(
+                searchedArticle.contenu.split(" ").length / 2,
+                searchedArticle.contenu.split(" ").length
+            )
+            .join(" ");
+        let srcs = document.querySelector(".srcs");
+        searchedArticle.source.forEach((source) => {
+            let p = document.createElement("p");
+            let span = document.createElement("span");
+            span.innerHTML = source.nom;
+            p.appendChild(span);
+            p.innerHTML += " : " + source.lien;
+            srcs.appendChild(p);
+        });
     })
     .catch((error) => {
       console.error("Error fetching data:", error);
