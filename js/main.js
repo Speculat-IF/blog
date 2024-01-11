@@ -120,7 +120,7 @@ if (window.location.href.includes("articles.html")) {
         var img = new Image();
         img.onload = () => console.log("No error detected");
         let tumbnail = document.createElement("img");
-        tumbnail.src = urlImage + curentArticle.tumbnail;
+        tumbnail.src = urlImage + curentArticle.tumbnail + "?raw=true";
         tumbnail.alt = "tubnail de l'article";
         let info = document.createElement("div");
         info.classList.add("info");
