@@ -86,6 +86,9 @@ nav div:nth-child(2) .search input {
   color: rgb(30, 30, 30);
   width: 100%;
 }
+nav div:nth-child(2) .search input ::-moz-placeholder {
+  color: rgba(0, 0, 0, 0.5);
+}
 nav div:nth-child(2) .search input ::placeholder {
   color: rgba(0, 0, 0, 0.5);
 }
@@ -139,6 +142,9 @@ nav div:nth-child(2) .block {
     flex-direction: row;
     gap: 1.5rem;
   }
+  nav div:nth-child(2) input::-moz-placeholder {
+    display: none;
+  }
   nav div:nth-child(2) input::placeholder {
     display: none;
   }
@@ -147,7 +153,7 @@ main {
   display: flex;
   flex-direction: column;
   gap: 20vh;
-  margin: 0 0 20vh 0;
+  margin: 20vh 0;
 }
 @media screen and (max-width: 768px) {
   main {
@@ -265,7 +271,8 @@ main .most_recent .posts .post {
 main .most_recent .posts .post img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
   border-radius: 0.4rem;
   height: 30vh;
 }
@@ -384,7 +391,8 @@ main .all .posts .post {
 main .all .posts .post img {
   width: 100%;
   height: 30vh;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
   border-radius: 0.4rem;
 }
 main .all .posts .post .infos {
@@ -499,7 +507,8 @@ main .article .content p {
 main .article .content img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
   border-radius: 0.4rem;
 }
 main .article .content .t-darkmode {
@@ -629,6 +638,9 @@ main .about form .champ input, main .about form .champ select, main .about form 
   align-items: center;
   justify-content: center;
 }
+main .about form .champ input::-moz-placeholder, main .about form .champ select::-moz-placeholder, main .about form .champ textarea::-moz-placeholder {
+  color: rgb(30, 30, 30);
+}
 main .about form .champ input::placeholder, main .about form .champ select::placeholder, main .about form .champ textarea::placeholder {
   color: rgb(30, 30, 30);
 }
@@ -672,6 +684,10 @@ main .about form .valid input {
   main .about form .valid input {
     width: 100%;
   }
+}
+
+.articles {
+  margin-top: 0;
 }
 
 footer {
@@ -749,6 +765,4 @@ footer button {
 
 .block {
   display: flex;
-}
-
-/*# sourceMappingURL=style.css.map */
+}/*# sourceMappingURL=style.css.map */

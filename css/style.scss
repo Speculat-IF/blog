@@ -183,7 +183,7 @@ main {
   display: flex;
   flex-direction: column;
   gap: 20vh;
-  margin: 0 0 20vh 0;
+  margin: 20vh 0;
 
   @media screen and (max-width: 768px) {
     gap: 10vh;
@@ -814,6 +814,10 @@ main {
     }
   }
 
+}
+
+.articles {
+  margin-top: 0;
 }
 
 footer {
