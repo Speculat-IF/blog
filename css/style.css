@@ -86,10 +86,14 @@ nav div:nth-child(2) .search input {
   color: rgb(30, 30, 30);
   width: 100%;
 }
+nav div:nth-child(2) .search input ::-moz-placeholder {
+  color: rgba(0, 0, 0, 0.5);
+}
 nav div:nth-child(2) .search input ::placeholder {
   color: rgba(0, 0, 0, 0.5);
 }
-nav div:nth-child(2) .search input:active, nav div:nth-child(2) .search input:focus {
+nav div:nth-child(2) .search input:active,
+nav div:nth-child(2) .search input:focus {
   outline: none;
 }
 nav div:nth-child(2) .d-l {
@@ -138,6 +142,9 @@ nav div:nth-child(2) .block {
     display: flex;
     flex-direction: row;
     gap: 1.5rem;
+  }
+  nav div:nth-child(2) input::-moz-placeholder {
+    display: none;
   }
   nav div:nth-child(2) input::placeholder {
     display: none;
@@ -268,9 +275,9 @@ main .most_recent .posts .post {
 main .most_recent .posts .post img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
   border-radius: 0.4rem;
-  height: 30vh;
 }
 main .most_recent .posts .post .infos {
   display: flex;
@@ -305,6 +312,13 @@ main .most_recent .posts .others {
   flex-direction: column;
   height: 100%;
   justify-content: space-between;
+}
+main .most_recent .posts .others img {
+  width: 100%;
+  height: 30vh;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 0.4rem;
 }
 main .most_recent .posts .others .desc {
   display: none;
@@ -387,7 +401,8 @@ main .all .posts .post {
 main .all .posts .post img {
   width: 100%;
   height: 30vh;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
   border-radius: 0.4rem;
 }
 main .all .posts .post .infos {
@@ -505,7 +520,8 @@ main .article .content p {
 main .article .content img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
   border-radius: 0.4rem;
 }
 main .article .content .t-darkmode {
@@ -623,7 +639,9 @@ main .about form .champ label {
 main .about form .champ .t-darkmode {
   color: #f1f9fc;
 }
-main .about form .champ input, main .about form .champ select, main .about form .champ textarea {
+main .about form .champ input,
+main .about form .champ select,
+main .about form .champ textarea {
   padding: 0.75rem 1rem;
   color: rgb(30, 30, 30);
   border: none;
@@ -635,10 +653,20 @@ main .about form .champ input, main .about form .champ select, main .about form 
   align-items: center;
   justify-content: center;
 }
-main .about form .champ input::placeholder, main .about form .champ select::placeholder, main .about form .champ textarea::placeholder {
+main .about form .champ input::-moz-placeholder, main .about form .champ select::-moz-placeholder, main .about form .champ textarea::-moz-placeholder {
   color: rgb(30, 30, 30);
 }
-main .about form .champ input:active, main .about form .champ input:focus, main .about form .champ textarea:active, main .about form .champ textarea:focus, main .about form .champ select:active, main .about form .champ select:focus {
+main .about form .champ input::placeholder,
+main .about form .champ select::placeholder,
+main .about form .champ textarea::placeholder {
+  color: rgb(30, 30, 30);
+}
+main .about form .champ input:active,
+main .about form .champ input:focus,
+main .about form .champ textarea:active,
+main .about form .champ textarea:focus,
+main .about form .champ select:active,
+main .about form .champ select:focus {
   outline: none;
 }
 main .about form .valid {
@@ -759,6 +787,4 @@ footer button {
 
 .block {
   display: flex;
-}
-
-/*# sourceMappingURL=style.css.map */
+}/*# sourceMappingURL=style.css.map */
