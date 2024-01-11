@@ -111,6 +111,7 @@ nav {
       }
     }
 
+
     .d-l {
       display: flex;
       flex-direction: row;
@@ -125,6 +126,17 @@ nav {
       min-width: 20%;
       align-items: center;
       justify-content: center;
+
+    }
+    .sun{
+      display: none;
+    }
+
+    .hidden{
+      display: none;
+    }
+    .block{
+      display: flex;
     }
   }
 }
@@ -321,9 +333,15 @@ main {
           }
 
           h3 {
-            font-size: 1.2rem;
-            font-weight: 700;
+            font-size: 1rem;
+            font-weight: 500;
+
+            span {
+              font-size: 1.2rem;
+              font-weight: 700;
+            }
           }
+
 
           div {
             display: flex;
@@ -337,6 +355,10 @@ main {
             }
           }
         }
+      }
+      .t-darkmode{
+
+        color: $color-secondary;
       }
 
       .others {
@@ -580,7 +602,12 @@ main {
         object-fit: cover;
         border-radius: 0.4rem;
       }
+      .t-darkmode{
+
+        color: $color-secondary;
+      }
     }
+
 
     .srcs {
       display: flex;
@@ -710,6 +737,10 @@ main {
           font-weight: 400;
           color: $color-tertiary;
         }
+        .t-darkmode{
+
+          color: $color-secondary;
+        }
 
         input, select, textarea {
           padding: 0.75rem 1rem;
@@ -804,7 +835,9 @@ footer {
     width: 50%;
     text-align: center;
     font-size: 0.8rem;
+    color: $black;
   }
+
 
   button {
     display: flex;
@@ -855,7 +888,16 @@ footer {
 
 
 }
-.t-darkmode{
 
-  color: $color-secondary;
+.blanc{
+  display: none;
 }
+.hidden{
+  display: none;
+}
+.block{
+  display: flex;
+}
+
+
+

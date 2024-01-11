@@ -106,6 +106,15 @@ nav div:nth-child(2) .d-l {
   align-items: center;
   justify-content: center;
 }
+nav div:nth-child(2) .sun {
+  display: none;
+}
+nav div:nth-child(2) .hidden {
+  display: none;
+}
+nav div:nth-child(2) .block {
+  display: flex;
+}
 
 @media screen and (max-width: 768px) {
   nav {
@@ -267,6 +276,10 @@ main .most_recent .posts .post .infos p {
   font-size: 0.8rem;
 }
 main .most_recent .posts .post .infos h3 {
+  font-size: 1rem;
+  font-weight: 500;
+}
+main .most_recent .posts .post .infos h3 span {
   font-size: 1.2rem;
   font-weight: 700;
 }
@@ -279,6 +292,9 @@ main .most_recent .posts .post .infos div {
 }
 main .most_recent .posts .post .infos div p:nth-child(1) {
   color: #2F4DDB;
+}
+main .most_recent .posts .t-darkmode {
+  color: #f1f9fc;
 }
 main .most_recent .posts .others {
   display: flex;
@@ -485,6 +501,9 @@ main .article .content img {
   object-fit: cover;
   border-radius: 0.4rem;
 }
+main .article .content .t-darkmode {
+  color: #f1f9fc;
+}
 main .article .srcs {
   display: flex;
   flex-direction: column;
@@ -594,6 +613,9 @@ main .about form .champ label {
   font-weight: 400;
   color: rgba(0, 0, 0, 0.5);
 }
+main .about form .champ .t-darkmode {
+  color: #f1f9fc;
+}
 main .about form .champ input, main .about form .champ select, main .about form .champ textarea {
   padding: 0.75rem 1rem;
   color: rgb(30, 30, 30);
@@ -670,6 +692,7 @@ footer p {
   width: 50%;
   text-align: center;
   font-size: 0.8rem;
+  color: rgb(30, 30, 30);
 }
 footer button {
   display: flex;
@@ -715,8 +738,16 @@ footer button {
   color: #f1f9fc;
 }
 
-.t-darkmode {
-  color: #f1f9fc;
+.blanc {
+  display: none;
+}
+
+.hidden {
+  display: none;
+}
+
+.block {
+  display: flex;
 }
 
 /*# sourceMappingURL=style.css.map */
