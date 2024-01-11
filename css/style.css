@@ -171,6 +171,9 @@ main header p {
   color: rgb(30, 30, 30);
   width: 50%;
 }
+main header .t-darkmode {
+  color: #f1f9fc;
+}
 main header .darkmode {
   background-color: rgb(30, 30, 30);
   color: #f1f9fc;
@@ -407,6 +410,9 @@ main .all .posts .post .infos div {
 }
 main .all .posts .post .infos div p:nth-child(1) {
   color: #2F4DDB;
+}
+main .all .posts .t-darkmode {
+  color: #f1f9fc;
 }
 main .all button {
   display: flex;

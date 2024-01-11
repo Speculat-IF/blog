@@ -207,6 +207,10 @@ main {
       color: $black;
       width: 50%;
     }
+    .t-darkmode{
+
+      color: $color-secondary;
+    }
     .darkmode{
       background-color: $black;
       color: $color-secondary;
@@ -493,6 +497,10 @@ main {
             }
           }
         }
+      }
+      .t-darkmode{
+
+        color: $color-secondary;
       }
     }
 
