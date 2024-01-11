@@ -249,6 +249,7 @@ main .most_recent .posts .post img {
   -o-object-fit: cover;
      object-fit: cover;
   border-radius: 0.4rem;
+  height: 30vh;
 }
 main .most_recent .posts .post .infos {
   display: flex;
@@ -258,7 +259,7 @@ main .most_recent .posts .post .infos p {
   font-size: 0.8rem;
 }
 main .most_recent .posts .post .infos h3 {
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   font-weight: 700;
 }
 main .most_recent .posts .post .infos div {
