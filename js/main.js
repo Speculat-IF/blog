@@ -1,6 +1,4 @@
 /* Global */
-
-
 const tagcolor = {
   Biologique: "green",
   IA: "red",
@@ -278,7 +276,6 @@ if (window.location.href.includes("article.html")) {
 }
 
 let favtag= true;
-let darktag= false;
 function dark_mode(){
   const body = document.querySelector("body");
   const header = document.querySelector("header");
@@ -322,13 +319,5 @@ function dark_mode(){
   label.forEach(element => {
     element.classList.toggle("t-darkmode");
   });
-  if (darktag === false) {
-    localStorage.setItem("darkmode", "true");
-    darktag = true;
-  }
 
-}
-
-if (localStorage.getItem("darkmode") === "true") {
-  dark_mode();
 }
