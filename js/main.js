@@ -101,12 +101,12 @@ if (window.location.href.includes("articles.html")) {
     filters.appendChild(button);
   }
 
-  auteur.forEach((auteur) => {
-    let button = document.createElement("button");
-    button.innerHTML = auteur;
-    button.classList.add("filter");
-    filters.appendChild(button);
-  });
+  // auteur.forEach((auteur) => {
+  //   let button = document.createElement("button");
+  //   button.innerHTML = auteur;
+  //   button.classList.add("filter");
+  //   filters.appendChild(button);
+  // });
 
   fetch(url)
     .then((response) => response.json())
