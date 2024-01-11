@@ -113,7 +113,8 @@ nav {
         }
       }
 
-      input:active, input:focus {
+      input:active,
+      input:focus {
         outline: none;
       }
     }
@@ -338,7 +339,6 @@ main {
           height: 100%;
           object-fit: cover;
           border-radius: 0.4rem;
-          height: 30vh;
         }
 
         .infos {
@@ -385,6 +385,16 @@ main {
         height: 100%;
         justify-content: space-between;
 
+<<<<<<< HEAD
+=======
+        img {
+          width: 100%;
+          height: 30vh;
+          object-fit: cover;
+          border-radius: 0.4rem;
+        }
+
+>>>>>>> 9eaa1c07f2468cdbba2deb9275d900c9c01fb759
         .desc {
           display: none;
         }
@@ -516,7 +526,10 @@ main {
         }
       }
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> 9eaa1c07f2468cdbba2deb9275d900c9c01fb759
       .t-darkmode {
 
         color: $color-secondary;
@@ -539,7 +552,6 @@ main {
       margin: 5vh auto 0;
     }
   }
-
 
   @media screen and (max-width: 768px) {
 
@@ -773,7 +785,9 @@ main {
           color: $color-secondary;
         }
 
-        input, select, textarea {
+        input,
+        select,
+        textarea {
           padding: 0.75rem 1rem;
           color: $black;
           border: none;
@@ -790,7 +804,12 @@ main {
           }
         }
 
-        input:active, input:focus, textarea:active, textarea:focus, select:active, select:focus {
+        input:active,
+        input:focus,
+        textarea:active,
+        textarea:focus,
+        select:active,
+        select:focus {
           outline: none;
         }
 
@@ -918,6 +937,14 @@ footer {
   }
 }
 
+<<<<<<< HEAD
+=======
+.darkmode {
+  background-color: $black;
+  color: $color-secondary;
+}
+
+>>>>>>> 9eaa1c07f2468cdbba2deb9275d900c9c01fb759
 .blanc {
   display: none;
 }
@@ -929,6 +956,3 @@ footer {
 .block {
   display: flex;
 }
-
-
-
