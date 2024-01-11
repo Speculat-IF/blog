@@ -259,6 +259,10 @@ main .most_recent .posts .post .infos p {
   font-size: 0.8rem;
 }
 main .most_recent .posts .post .infos h3 {
+  font-size: 1rem;
+  font-weight: 500;
+}
+main .most_recent .posts .post .infos h3 span {
   font-size: 1.2rem;
   font-weight: 700;
 }
