@@ -8,13 +8,10 @@ const tagcolor = {
 };
 
 const auteur = [
-  "Nalïth",
-  "MisterRedHat",
-  "Ethra",
-  "Lucee",
-  "Ali",
-  "Zorgos",
-  "Dragibo",
+  "Ethan Delcroix",
+  "Arthur Prudhomme",
+  "Thea Blachon",
+  "Pierre-Louis Sans",
 ];
 
 const url =

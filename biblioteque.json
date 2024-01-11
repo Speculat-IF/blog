@@ -27,7 +27,7 @@
             "id": 1,
             "titre": "Ingénierie neuromorphique : L'avenir des interfaces cerveau-machine",
             "date": "02/12/2023",
-            "auteur": "MisterRedHat",
+            "auteur": "Arthur Prudhomme",
             "tumbnail": "nom.png",
             "illustration": "nom.png/nom.png",
             "tags": [
@@ -57,7 +57,7 @@
             "id": 2,
             "titre": "Informatique Quantique : Chiffrement post-quantique, l'avenir de la cybersécurité",
             "date": "02/12/2023",
-            "auteur": "Zorgos",
+            "auteur": "Pierre-Louis Sans",
             "tumbnail": "miniQuantiSecu.png",
             "illustration": "nom.png/nom.png",
             "tags": [
@@ -95,7 +95,7 @@
           "id": 3,
           "titre": "Bio informatique : Les futurs Ordinateurs pourraient-ils fonctionner avec des cellules du cerveau humain",
           "date": "02/12/2023",
-          "auteur": "Nalïth",
+          "auteur": "Ethan Delcroix",
           "tumbnail": "miniBioInfo.jpg",
           "illustration": "nom.png/nom.png",
           "tags": [
@@ -118,7 +118,7 @@
         "id": 4,
         "titre": "L'Ère des Super-capteurs : Entre Innovation et Préoccupations sur la Vie Privée",
         "date": "10/01/2024",
-        "auteur": "Ethra",
+        "auteur": "Thea Blachon",
         "tumbnail": "tumbnail.jpg",
         "illustration": "nom.png/nom.png",
         "tags": [
