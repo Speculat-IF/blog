@@ -16,6 +16,12 @@ $black: rgb(30, 30, 30);
 
 
 
+  .darkmode {
+    background-color: $black;
+    color: $color-secondary;
+  }
+
+
 nav {
   display: flex;
   flex-direction: row;
@@ -129,14 +135,16 @@ nav {
       justify-content: center;
 
     }
-    .sun{
+
+    .sun {
       display: none;
     }
 
-    .hidden{
+    .hidden {
       display: none;
     }
-    .block{
+
+    .block {
       display: flex;
     }
   }
@@ -207,19 +215,21 @@ main {
       color: $black;
       width: 50%;
     }
-    .t-darkmode{
+
+    .t-darkmode {
 
       color: $color-secondary;
     }
-    .darkmode{
+
+    .darkmode {
       background-color: $black;
       color: $color-secondary;
-      p{
+
+      p {
         color: $color-secondary;
       }
 
     }
-
 
 
     .cats {
@@ -249,10 +259,12 @@ main {
 
 
       }
-      .darkmodeCat{
+
+      .darkmodeCat {
         background-color: rgba(42, 42, 42, 0.71);
         color: $color-secondary;
-        p{
+
+        p {
           background-color: rgba(42, 42, 42, 0.7);
         }
 
@@ -361,7 +373,8 @@ main {
           }
         }
       }
-      .t-darkmode{
+
+      .t-darkmode {
 
         color: $color-secondary;
       }
@@ -372,7 +385,7 @@ main {
         height: 100%;
         justify-content: space-between;
 
-        .desc{
+        .desc {
           display: none;
         }
       }
@@ -403,7 +416,7 @@ main {
         gap: 2rem;
         margin-top: 2rem;
 
-      .others .desc{
+        .others .desc {
           display: flex;
         }
       }
@@ -497,8 +510,14 @@ main {
             }
           }
         }
+        .darkmode {
+          background-color: $black;
+          color: $color-secondary;
+        }
       }
-      .t-darkmode{
+
+
+      .t-darkmode {
 
         color: $color-secondary;
       }
@@ -541,9 +560,9 @@ main {
         margin-top: 2rem;
 
         .post .infos {
-            display: flex;
-            flex-direction: column;
-            text-align: left;
+          display: flex;
+          flex-direction: column;
+          text-align: left;
         }
       }
 
@@ -611,10 +630,12 @@ main {
         object-fit: cover;
         border-radius: 0.4rem;
       }
-      .t-darkmode{
+
+      .t-darkmode {
 
         color: $color-secondary;
       }
+
     }
 
 
@@ -746,7 +767,8 @@ main {
           font-weight: 400;
           color: $color-tertiary;
         }
-        .t-darkmode{
+
+        .t-darkmode {
 
           color: $color-secondary;
         }
@@ -895,20 +917,16 @@ footer {
     }
   }
 }
-.darkmode{
-  background-color: $black;
-  color: $color-secondary;
 
-
-}
-
-.blanc{
+.blanc {
   display: none;
 }
-.hidden{
+
+.hidden {
   display: none;
 }
-.block{
+
+.block {
   display: flex;
 }
 

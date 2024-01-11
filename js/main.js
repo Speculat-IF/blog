@@ -1,6 +1,10 @@
 /* Global */
 
 
+
+
+
+
 const tagcolor = {
   Biologique: "green",
   IA: "red",
@@ -277,6 +281,9 @@ if (window.location.href.includes("article.html")) {
     });
 }
 
+
+
+
 let favtag= true;
 let darktag= false;
 function dark_mode(){
@@ -287,12 +294,13 @@ function dark_mode(){
   const button = document.querySelectorAll(".cat");
   const h3 = document.querySelectorAll("h3");
   const img = document.querySelectorAll("img");
+  const info = document.querySelectorAll(".info h3");
   const moon = document.querySelector(".moon");
   const sun = document.querySelector(".sun");
   const faviconblack = document.querySelector(".faviconblack");
   const label = document.querySelectorAll("label");
-
   body.classList.toggle("darkmode");
+  console.log(h3)
   button.forEach(element => {
     element.classList.toggle("darkmodeCat");
   });
@@ -301,34 +309,52 @@ function dark_mode(){
     element.classList.toggle("t-darkmode");
   });
   h3.forEach(element => {
+    console.log(element);
     element.classList.toggle("t-darkmode");
   });
   img.forEach(element => {
-        element.classList.toggle("t-darkmode");
-    });
+    element.classList.toggle("t-darkmode");
+  });
+  info.forEach(element => {
+    element.classList.toggle("darkmode");
+  });
   moon.classList.toggle("hidden");
   sun.classList.toggle("block");
   if (favtag === true) {
     faviconblack.href = "images/logo_blanc.png";
     favtag = false;
   }
+
   else {
-        faviconblack.href = "images/logo_noir.png";
-        favtag = true;
-    }
+    faviconblack.href = "images/logo_noir.png";
+    favtag = true;
+  }
   if(header){
-      header.classList.toggle("darkmode");
+    header.classList.toggle("darkmode");
   }
   label.forEach(element => {
     element.classList.toggle("t-darkmode");
   });
   if (darktag === false) {
     localStorage.setItem("darkmode", "true");
+    console.log(localStorage.getItem("darkmode"));
     darktag = true;
+
+  }
+  else {
+    localStorage.setItem("darkmode", "false");
+    console.log(localStorage.getItem("darkmode"));
+    darktag = false;
   }
 
 }
 
 if (localStorage.getItem("darkmode") === "true") {
+  setTimeout(startdarkmode, 100)
+}
+function startdarkmode(){
+
   dark_mode();
+
+
 }

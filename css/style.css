@@ -8,6 +8,11 @@
   letter-spacing: 0.5px;
 }
 
+.darkmode {
+  background-color: rgb(30, 30, 30);
+  color: #f1f9fc;
+}
+
 nav {
   display: flex;
   flex-direction: row;
@@ -411,6 +416,10 @@ main .all .posts .post .infos div {
 main .all .posts .post .infos div p:nth-child(1) {
   color: #2F4DDB;
 }
+main .all .posts .post .darkmode {
+  background-color: rgb(30, 30, 30);
+  color: #f1f9fc;
+}
 main .all .posts .t-darkmode {
   color: #f1f9fc;
 }
@@ -744,11 +753,6 @@ footer button {
     font-size: 0.8rem;
   }
 }
-.darkmode {
-  background-color: rgb(30, 30, 30);
-  color: #f1f9fc;
-}
-
 .blanc {
   display: none;
 }
