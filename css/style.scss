@@ -1,5 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
 
+.dark-mode body {
+  background-color: #222;
+  color: #fff;
+}
+
+img {
+  object-fit: cover;
+}
 
 * {
   margin: 0;
@@ -8,6 +16,7 @@
   font-family: 'Inter', sans-serif;
   line-height: 200%;
   letter-spacing: 0.5px;
+  transition: background-color 0.5s ease;
 }
 
 $color-primary: #2F4DDB;
@@ -123,6 +132,10 @@ nav {
       min-width: 20%;
       align-items: center;
       justify-content: center;
+
+      .sun {
+        display: none;
+      }
     }
   }
 }
@@ -678,6 +691,7 @@ main {
         display: flex;
         flex-direction: column;
         gap: 0.5rem;
+        // height: fit-content;
 
         label {
           font-size: 0.8rem;
@@ -686,7 +700,7 @@ main {
         }
 
         input, select, textarea {
-          padding: 0.75rem 1rem;
+          padding: 0 1rem;
           color: $black;
           border: none;
           border-bottom: 1.5px solid $black;
@@ -704,8 +718,56 @@ main {
 
         input:active, input:focus, textarea:active, textarea:focus, select:active, select:focus {
           outline: none;
+          border: none;
+          border-bottom: 1.5px solid $color-primary;
         }
-      
+
+        .msg {
+          display: none;
+        }
+      }
+
+      .active {
+
+        label {
+          color: $color-primary;
+        }
+
+        input {
+          border-bottom: 1.5px solid $color-primary;
+        }
+
+        .msg {
+          display: flex;
+          flex-direction: row;
+          align-items: left;
+          justify-content: start;
+          gap: 0.5rem;
+          font-size: 0.8rem;
+          color: $color-primary;
+        }
+      }
+
+      .error {
+
+        label {
+          color: #F4203D;
+        }
+
+        input {
+          background-color: #FFEFF1;
+          border-bottom: 1.5px solid #F4203D;
+        }
+
+        .msg {
+          display: flex;
+          flex-direction: row;
+          align-items: left;
+          justify-content: start;
+          gap: 0.5rem;
+          font-size: 0.8rem;
+          color: #F4203D;
+        }
       }
 
       .valid {

@@ -1,4 +1,14 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap");
+.dark-mode body {
+  background-color: #222;
+  color: #fff;
+}
+
+img {
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -6,6 +16,7 @@
   font-family: "Inter", sans-serif;
   line-height: 200%;
   letter-spacing: 0.5px;
+  transition: background-color 0.5s ease;
 }
 
 nav {
@@ -107,6 +118,9 @@ nav div:nth-child(2) .d-l {
   min-width: 20%;
   align-items: center;
   justify-content: center;
+}
+nav div:nth-child(2) .d-l .sun {
+  display: none;
 }
 
 @media screen and (max-width: 768px) {
@@ -588,7 +602,7 @@ main .about form .champ label {
   color: rgba(0, 0, 0, 0.5);
 }
 main .about form .champ input, main .about form .champ select, main .about form .champ textarea {
-  padding: 0.75rem 1rem;
+  padding: 0 1rem;
   color: #1E1E1E;
   border: none;
   border-bottom: 1.5px solid #1E1E1E;
@@ -607,6 +621,42 @@ main .about form .champ input::placeholder, main .about form .champ select::plac
 }
 main .about form .champ input:active, main .about form .champ input:focus, main .about form .champ textarea:active, main .about form .champ textarea:focus, main .about form .champ select:active, main .about form .champ select:focus {
   outline: none;
+  border: none;
+  border-bottom: 1.5px solid #2F4DDB;
+}
+main .about form .champ .msg {
+  display: none;
+}
+main .about form .active label {
+  color: #2F4DDB;
+}
+main .about form .active input {
+  border-bottom: 1.5px solid #2F4DDB;
+}
+main .about form .active .msg {
+  display: flex;
+  flex-direction: row;
+  align-items: left;
+  justify-content: start;
+  gap: 0.5rem;
+  font-size: 0.8rem;
+  color: #2F4DDB;
+}
+main .about form .error label {
+  color: #F4203D;
+}
+main .about form .error input {
+  background-color: #FFEFF1;
+  border-bottom: 1.5px solid #F4203D;
+}
+main .about form .error .msg {
+  display: flex;
+  flex-direction: row;
+  align-items: left;
+  justify-content: start;
+  gap: 0.5rem;
+  font-size: 0.8rem;
+  color: #F4203D;
 }
 main .about form .valid {
   display: flex;
