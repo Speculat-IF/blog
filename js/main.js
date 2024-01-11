@@ -248,3 +248,31 @@ if (window.location.href.includes("article.html")) {
       console.error("Error fetching data:", error);
     });
 }
+
+function dark_mode(){
+  const body = document.querySelector("body");
+  const header = document.querySelector("header");
+  const h1 = document.querySelector("h1");
+  const p = document.querySelectorAll("p");
+  const button = document.querySelectorAll(".cat");
+  const h3 = document.querySelectorAll("h3");
+  const img = document.querySelectorAll("img");
+  body.classList.toggle("darkmode");
+  header.classList.toggle("darkmode");
+  button.forEach(element => {
+    element.classList.toggle("darkmodeCat");
+  });
+  h1.classList.toggle("darkmode");
+  p.forEach(element => {
+    element.classList.toggle("t-darkmode");
+  });
+  h3.forEach(element => {
+    element.classList.toggle("t-darkmode");
+  });
+    img.forEach(element => {
+        element.classList.toggle("t-darkmode");
+    });
+
+
+
+}

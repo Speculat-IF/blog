@@ -12,7 +12,9 @@
 $color-primary: #2F4DDB;
 $color-secondary: #f1f9fc;
 $color-tertiary: rgba(0, 0, 0, 0.5);
-$black: #1E1E1E;
+$black: rgb(30, 30, 30);
+
+
 
 nav {
   display: flex;
@@ -43,6 +45,7 @@ nav {
 
       p {
         font-weight: 600;
+        color: $black;
       }
     }
 
@@ -137,23 +140,25 @@ nav {
     position: fixed;
     top: 0;
     background-color: white;
-  
+
     div:nth-child(1) {
-  
+
       .logo p {
         display: none;
       }
-  
+
       .menu {
         display: none;
+
       }
+
     }
-  
+
     div:nth-child(2) {
       display: flex;
       flex-direction: row;
       gap: 1.5rem;
-  
+
       input::placeholder {
         display: none;
       }
@@ -189,6 +194,16 @@ main {
       color: $black;
       width: 50%;
     }
+    .darkmode{
+      background-color: $black;
+      color: $color-secondary;
+      p{
+        color: $color-secondary;
+      }
+
+    }
+
+
 
     .cats {
       display: flex;
@@ -214,6 +229,16 @@ main {
         p {
           width: 100%;
         }
+
+
+      }
+      .darkmodeCat{
+        background-color: rgba(42, 42, 42, 0.71);
+        color: $color-secondary;
+        p{
+          background-color: rgba(42, 42, 42, 0.7);
+        }
+
       }
     }
   }
@@ -225,15 +250,15 @@ main {
       flex-direction: column;
       gap: 1rem;
       padding: 1rem 1.75rem;
-  
+
       h1 {
         font-size: 1.5rem;
       }
-  
+
       p {
         width: 100%;
       }
-  
+
       .cats {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
@@ -252,8 +277,8 @@ main {
       display: flex;
       flex-direction: row;
       justify-content: space-between;
-      width: 100%; 
-      
+      width: 100%;
+
       h2 {
         font-size: 2rem;
         font-weight: 700;
@@ -286,7 +311,7 @@ main {
           border-radius: 0.4rem;
           height: 30vh;
         }
-        
+
         .infos {
           display: flex;
           flex-direction: column;
@@ -332,19 +357,19 @@ main {
     .most_recent {
       gap: 2rem;
       padding: 1rem 1.75rem;
-  
+
       .title {
         display: flex;
         flex-direction: row;
         justify-content: space-between;
-        width: 100%; 
-        
+        width: 100%;
+
         h2 {
           font-size: 1.2rem;
           font-weight: 700;
         }
       }
-  
+
       .posts {
         display: flex;
         flex-direction: column;
@@ -400,7 +425,7 @@ main {
     justify-content: center;
     text-align: center;
     margin-top: 15vh;
-    
+
     .posts {
       display: grid;
       grid-template-columns: repeat(3, 1fr);
@@ -419,7 +444,7 @@ main {
           object-fit: cover;
           border-radius: 0.4rem;
         }
-        
+
         .infos {
           display: flex;
           flex-direction: column;
@@ -465,6 +490,7 @@ main {
     }
   }
 
+
   @media screen and (max-width: 768px) {
 
     .all {
@@ -476,20 +502,20 @@ main {
       justify-content: center;
       text-align: center;
       margin-top: 15vh;
-      
+
       .posts {
         display: grid;
         grid-template-columns: repeat(1, 1fr);
         gap: 3rem;
         margin-top: 2rem;
-  
+
         .post .infos {
             display: flex;
             flex-direction: column;
             text-align: left;
         }
       }
-  
+
       button {
         display: flex;
         align-items: center;
@@ -582,18 +608,18 @@ main {
       padding: 0 1.75rem;
       flex-direction: column;
       gap: 2rem;
-  
+
       .title {
         display: flex;
         flex-direction: row;
         justify-content: space-between;
         align-items: start;
-  
+
         h1 {
           font-size: 1rem;
         }
       }
-  
+
       .content {
         width: 100%;
         display: grid;
@@ -705,7 +731,7 @@ main {
         input:active, input:focus, textarea:active, textarea:focus, select:active, select:focus {
           outline: none;
         }
-      
+
       }
 
       .valid {
@@ -734,20 +760,20 @@ main {
       flex-direction: column;
       padding: 0 1.75rem;
       gap: 5rem;
-  
+
       .socials {
         width: 100%;
       }
-  
+
       form {
         display: flex;
         flex-direction: column;
         gap: 2rem;
         width: 100%;
-  
+
         .valid {
           width: 100%;
-  
+
           input {
             width: 100%;
           }
@@ -808,18 +834,28 @@ footer {
     justify-content: center;
     gap: 1.5rem;
     padding: 3rem 1.75rem;
-  
+
     h2 {
       font-size: 1.5rem;
       text-align: center;
     }
-  
+
     p {
       width: 100%;
     }
-  
+
     button {
       font-size: 0.8rem;
     }
   }
+}
+.darkmode{
+  background-color: $black;
+  color: $color-secondary;
+
+
+}
+.t-darkmode{
+
+  color: $color-secondary;
 }
