@@ -31,12 +31,66 @@ function separateStrings(baseString, delimiter) {
 }
 
 function redirectForm() {
-  // if (window.location.href.includes("https")) {
-  //   window.location.href ="https://speculat-if.github.io/blog/apropos.html";
-  // } else {
-  //   window.location.href = "apropos.html";
-  // }
   window.location.href = "apropos.html";
+}
+
+function VerifAndSend() {
+
+  let nom = document.getElementById("nom").value;
+  let prenom = document.getElementById("prenom").value;
+  let email = document.getElementById("email").value;
+  let Object = document.getElementById("subject-select").value;
+  let message = document.getElementById("message").value;
+  
+  if (nom == "") {
+    document.getElementById("nom").style.borderColor = "red";
+    document.getElementById("nom").placeholder = "Veuillez entrer votre nom";
+    return false;
+  }
+  document.getElementById("nom").style.borderColor = "black";
+  if (email == "" || !email.includes("@") || !email.includes(".")) {
+    document.getElementById("email").style.borderColor = "red";
+    document.getElementById("email").value = "";
+    document.getElementById("email").placeholder =
+      "Veuillez entrer votre email : example@example.com";
+    return false;
+  }
+  document.getElementById("email").style.borderColor = "black";
+  if (Object == "") {
+    document.getElementById("subject-select").style.borderColor = "red";
+    document.getElementById("subject-select").placeholder =
+      "Veuillez entrer un objet";
+    return false;
+  }
+  document.getElementById("subject-select").style.borderColor = "black";
+  if (message == "") {
+    document.getElementById("message").style.borderColor = "red";
+    document.getElementById("message").placeholder =
+      "Veuillez entrer votre message";
+    return false;
+  }
+  document.getElementById("message").style.borderColor = "black";
+  let data = {
+    nom: nom,
+    prenom: prenom,
+    email: email,
+    object: Object,
+    message: message,
+  };
+  localStorage.setItem("SpeculatifEmail", JSON.stringify(data));
+  window.location.reload();
+}
+
+function separateIllustration(inputString) {
+
+  var stringsArray = inputString.split('/');
+  if (stringsArray.length >= 2) {
+      var stringOne = stringsArray[0];
+      var stringTwo = stringsArray[1];
+      return { stringOne: stringOne, stringTwo: stringTwo };
+  } else {
+      return { error: 'Invalid input string' };
+  }
 }
 
 const delimiter =' : ';
@@ -237,7 +291,7 @@ if (window.location.href.includes("article.html")) {
   fetch(url)
     .then((response) => response.json())
     .then((data) => {
-        // console.log(data);
+        console.log(data);
         let searchParams = new URLSearchParams(window.location.search);
         let id = searchParams.get("id");
         let searchedArticle = data.articles.find((article) => article.id == id);
@@ -269,6 +323,10 @@ if (window.location.href.includes("article.html")) {
                 searchedArticle.contenu.split(" ").length
             )
             .join(" ");
+        let illustrationOne = document.querySelector("#illustrationOne");
+        let illustrationTwo = document.querySelector("#illustrationTwo");
+        illustrationOne.src = urlImage + separateIllustration(searchedArticle.illustration).stringOne + "?raw=true";
+        illustrationTwo.src = urlImage + separateIllustration(searchedArticle.illustration).stringTwo + "?raw=true";
         let srcs = document.querySelector(".srcs");
         searchedArticle.source.forEach((source) => {
             let p = document.createElement("p");
