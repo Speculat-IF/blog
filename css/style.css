@@ -8,6 +8,11 @@
   letter-spacing: 0.5px;
 }
 
+.darkmode {
+  background-color: rgb(30, 30, 30);
+  color: #f1f9fc;
+}
+
 nav {
   display: flex;
   flex-direction: row;
@@ -86,9 +91,6 @@ nav div:nth-child(2) .search input {
   color: rgb(30, 30, 30);
   width: 100%;
 }
-nav div:nth-child(2) .search input ::-moz-placeholder {
-  color: rgba(0, 0, 0, 0.5);
-}
 nav div:nth-child(2) .search input ::placeholder {
   color: rgba(0, 0, 0, 0.5);
 }
@@ -142,9 +144,6 @@ nav div:nth-child(2) .block {
     display: flex;
     flex-direction: row;
     gap: 1.5rem;
-  }
-  nav div:nth-child(2) input::-moz-placeholder {
-    display: none;
   }
   nav div:nth-child(2) input::placeholder {
     display: none;
@@ -275,8 +274,7 @@ main .most_recent .posts .post {
 main .most_recent .posts .post img {
   width: 100%;
   height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   border-radius: 0.4rem;
 }
 main .most_recent .posts .post .infos {
@@ -316,8 +314,7 @@ main .most_recent .posts .others {
 main .most_recent .posts .others img {
   width: 100%;
   height: 30vh;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   border-radius: 0.4rem;
 }
 main .most_recent .posts .others .desc {
@@ -401,8 +398,7 @@ main .all .posts .post {
 main .all .posts .post img {
   width: 100%;
   height: 30vh;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   border-radius: 0.4rem;
 }
 main .all .posts .post .infos {
@@ -425,6 +421,10 @@ main .all .posts .post .infos div {
 }
 main .all .posts .post .infos div p:nth-child(1) {
   color: #2F4DDB;
+}
+main .all .posts .post .darkmode {
+  background-color: rgb(30, 30, 30);
+  color: #f1f9fc;
 }
 main .all .posts .t-darkmode {
   color: #f1f9fc;
@@ -520,8 +520,7 @@ main .article .content p {
 main .article .content img {
   width: 100%;
   height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   border-radius: 0.4rem;
 }
 main .article .content .t-darkmode {
@@ -653,9 +652,6 @@ main .about form .champ textarea {
   align-items: center;
   justify-content: center;
 }
-main .about form .champ input::-moz-placeholder, main .about form .champ select::-moz-placeholder, main .about form .champ textarea::-moz-placeholder {
-  color: rgb(30, 30, 30);
-}
 main .about form .champ input::placeholder,
 main .about form .champ select::placeholder,
 main .about form .champ textarea::placeholder {
@@ -772,11 +768,6 @@ footer button {
     font-size: 0.8rem;
   }
 }
-.darkmode {
-  background-color: rgb(30, 30, 30);
-  color: #f1f9fc;
-}
-
 .blanc {
   display: none;
 }
@@ -787,4 +778,6 @@ footer button {
 
 .block {
   display: flex;
-}/*# sourceMappingURL=style.css.map */
+}
+
+/*# sourceMappingURL=style.css.map */

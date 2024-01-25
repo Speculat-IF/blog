@@ -16,6 +16,12 @@ $black: rgb(30, 30, 30);
 
 
 
+  .darkmode {
+    background-color: $black;
+    color: $color-secondary;
+  }
+
+
 nav {
   display: flex;
   flex-direction: row;
@@ -227,7 +233,6 @@ main {
     }
 
 
-
     .cats {
       display: flex;
       flex-direction: row;
@@ -386,7 +391,6 @@ main {
           object-fit: cover;
           border-radius: 0.4rem;
         }
-
         .desc {
           display: none;
         }
@@ -512,8 +516,11 @@ main {
             }
           }
         }
+        .darkmode {
+          background-color: $black;
+          color: $color-secondary;
+        }
       }
-
       .t-darkmode {
 
         color: $color-secondary;
@@ -631,6 +638,7 @@ main {
 
         color: $color-secondary;
       }
+
     }
 
 
@@ -918,11 +926,6 @@ footer {
       font-size: 0.8rem;
     }
   }
-}
-
-.darkmode {
-  background-color: $black;
-  color: $color-secondary;
 }
 
 .blanc {
