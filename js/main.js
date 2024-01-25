@@ -30,6 +30,15 @@ function separateStrings(baseString, delimiter) {
     }
 }
 
+function redirectForm() {
+  // if (window.location.href.includes("https")) {
+  //   window.location.href ="https://speculat-if.github.io/blog/apropos.html";
+  // } else {
+  //   window.location.href = "apropos.html";
+  // }
+  window.location.href = "apropos.html";
+}
+
 const delimiter =' : ';
 
 /* Js Page Accueil */
