@@ -161,7 +161,7 @@ if (
         let postPrevue = post.querySelector(".prevue");
         if (postPrevue != null) {
           postPrevue.innerHTML =
-            reverse[i].contenu.split(" ").slice(0, 30).join(" ") + "...";
+            reverse[i].contenu[0].intro.split(" ").slice(0, 30).join(" ") + "...";
         }
         let postTumbnails = post.querySelectorAll(".tumbnail");
         img.onerror = () =>
@@ -338,22 +338,24 @@ if (window.location.href.includes("article.html")) {
         date.innerHTML = searchedArticle.date;
         let auteur = document.querySelector(".auteur");
         auteur.innerHTML = searchedArticle.auteur;
-        let textP1 = document.querySelector(".textP1");
-        textP1.innerHTML =
-            searchedArticle.contenu
-            .split(" ")
-            .slice(0, searchedArticle.contenu.split(" ").length / 2)
-            .join(" ") + "...";
-        let textP2 = document.querySelector(".textP2");
-        textP2.innerHTML =
-            "..." +
-            searchedArticle.contenu
-            .split(" ")
-            .slice(
-                searchedArticle.contenu.split(" ").length / 2,
-                searchedArticle.contenu.split(" ").length
-            )
-            .join(" ");
+        let intro = document.querySelector("#intro");
+        let partOneOne = document.querySelector("#partOneOne");
+        let partOneTwo = document.querySelector("#partOneTwo");
+        let partTwoOne = document.querySelector("#partTwoOne");
+        let partTwoTwo = document.querySelector("#partTwoTwo");
+        let conclusion = document.querySelector("#conclusion");
+        intro.innerHTML = searchedArticle.contenu[0].intro;
+        let partOne = searchedArticle.contenu[1].partieOne;
+        let partOneLength = partOne.length;
+        let partOneOneLength = Math.round(partOneLength * 0.3);
+        partOneOne.innerHTML = partOne.slice(0, partOneOneLength);
+        partOneTwo.innerHTML = partOne.slice(partOneOneLength, partOneLength);
+        let partTwo = searchedArticle.contenu[2].partiTwo;
+        let partTwoLength = partTwo.length;
+        let partTwoOneLength = Math.round(partTwoLength * 0.3);
+        partTwoOne.innerHTML = partTwo.slice(0, partTwoOneLength);
+        partTwoTwo.innerHTML = partTwo.slice(partTwoOneLength, partTwoLength);
+        conclusion.innerHTML = searchedArticle.contenu[3].conslusion;
         let illustrationOne = document.querySelector("#illustrationOne");
         let illustrationTwo = document.querySelector("#illustrationTwo");
         illustrationOne.src = urlImage + separateIllustration(searchedArticle.illustration).stringOne + "?raw=true";
