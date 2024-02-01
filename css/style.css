@@ -91,6 +91,9 @@ nav div:nth-child(2) .search input {
   color: rgb(30, 30, 30);
   width: 100%;
 }
+nav div:nth-child(2) .search input ::-moz-placeholder {
+  color: rgba(0, 0, 0, 0.5);
+}
 nav div:nth-child(2) .search input ::placeholder {
   color: rgba(0, 0, 0, 0.5);
 }
@@ -144,6 +147,9 @@ nav div:nth-child(2) .block {
     display: flex;
     flex-direction: row;
     gap: 1.5rem;
+  }
+  nav div:nth-child(2) input::-moz-placeholder {
+    display: none;
   }
   nav div:nth-child(2) input::placeholder {
     display: none;
@@ -274,7 +280,8 @@ main .most_recent .posts .post {
 main .most_recent .posts .post img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
   border-radius: 0.4rem;
 }
 main .most_recent .posts .post .infos {
@@ -314,7 +321,8 @@ main .most_recent .posts .others {
 main .most_recent .posts .others img {
   width: 100%;
   height: 30vh;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
   border-radius: 0.4rem;
 }
 main .most_recent .posts .others .desc {
@@ -398,7 +406,8 @@ main .all .posts .post {
 main .all .posts .post img {
   width: 100%;
   height: 30vh;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
   border-radius: 0.4rem;
 }
 main .all .posts .post .infos {
@@ -520,7 +529,8 @@ main .article .content p {
 main .article .content img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
   border-radius: 0.4rem;
 }
 main .article .content .t-darkmode {
@@ -652,6 +662,9 @@ main .about form .champ textarea {
   align-items: center;
   justify-content: center;
 }
+main .about form .champ input::-moz-placeholder, main .about form .champ select::-moz-placeholder, main .about form .champ textarea::-moz-placeholder {
+  color: rgb(30, 30, 30);
+}
 main .about form .champ input::placeholder,
 main .about form .champ select::placeholder,
 main .about form .champ textarea::placeholder {
@@ -679,6 +692,8 @@ main .about form .valid input {
   border-radius: 0.3rem;
   font-weight: 700;
   font-size: 1rem;
+  text-align: center;
+  width: object-fit;
 }
 @media screen and (max-width: 768px) {
   main .about {
@@ -778,6 +793,4 @@ footer button {
 
 .block {
   display: flex;
-}
-
-/*# sourceMappingURL=style.css.map */
+}/*# sourceMappingURL=style.css.map */
