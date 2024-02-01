@@ -95,6 +95,37 @@ function separateIllustration(inputString) {
 
 const delimiter =' : ';
 
+const searchBar = document.querySelector("#searchBar");
+
+fetch('https://raw.githubusercontent.com/Speculat-IF/blog/main/biblioteque.json')
+.then(response => response.json())
+  .then(data => {
+      for (let i = 0; i < data.articles.length; i++) {
+          document.getElementById('Input').innerHTML += `<option id="${data.articles[i].id}" value="${data.articles[i].titre}">`
+      }
+      // auteur.forEach(element => {
+      //   document.getElementById('Input').innerHTML += `<option value="${element}">`
+      // });
+})
+
+const loope = document.querySelector("#loope");
+
+loope.addEventListener("click", () => {
+  let id = null;
+  let titre = searchBar.value;
+  for (let i = 0; i < document.getElementById('Input').options.length; i++) {
+    if (document.getElementById('Input').options[i].value == titre) {
+      id = document.getElementById('Input').options[i].id;
+    }
+  }
+  if (id != null) {
+    window.location.href = "article.html?id=" + id;
+  }
+  else {
+    alert("L'article n'existe pas");
+  }
+})
+
 /* Js Page Accueil */
 if (
   window.location.href.includes("index.html") ||

@@ -23,8 +23,11 @@
         </div>
         <div>
             <div class="search">
-                <img src="images/search.svg" alt="Search Logo">
-                <input type="text" placeholder="Rechercher...">
+                <img id="loope" src="images/search.svg" alt="Search Logo">
+                <input list="Input" id="searchBar" type="text" placeholder="Rechercher...">
+                <datalist id="Input">
+
+                </datalist>
             </div>
             <div class="d-l moon" onclick="dark_mode()" >
                 <img src="images/solar_moon-broken.svg" alt="Moon Logo">
