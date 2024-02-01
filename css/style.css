@@ -504,6 +504,11 @@ main .article .title {
   align-items: start;
 }
 main .article .title h1 {
+  font-size: 1.2rem;
+  font-weight: 500;
+  width: 75%;
+}
+main .article .title h1 span {
   font-size: 1.5rem;
   font-weight: 700;
 }
@@ -515,25 +520,54 @@ main .article .title div {
 main .article .title div p:nth-child(1) {
   color: #2F4DDB;
 }
+main .article .title div .auteur {
+  text-align: end;
+}
 main .article .content {
   width: 100%;
-  display: grid;
-  grid-template-columns: repeat(2, 2fr);
+  display: flex;
+  flex-direction: column;
   gap: 2rem;
 }
 main .article .content p {
-  font-size: 0.8rem;
+  font-size: 1rem;
   font-weight: 400;
   color: rgb(30, 30, 30);
 }
-main .article .content img {
+main .article .content .parts {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+main .article .content .parts #partieOne,
+main .article .content .parts #partieTwo {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+main .article .content .parts #partieOne div,
+main .article .content .parts #partieTwo div {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  gap: 2rem;
+}
+main .article .content .parts #partieOne div #partOneTwo, main .article .content .parts #partieOne div img,
+main .article .content .parts #partieTwo div #partOneTwo,
+main .article .content .parts #partieTwo div img {
+  display: flex;
+  width: 50% !important;
+}
+main .article .content .parts img {
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
   border-radius: 0.4rem;
+  height: auto;
+  object-fit: cover;
 }
-main .article .content .t-darkmode {
+main .article .content .parts .t-darkmode {
   color: #f1f9fc;
 }
 main .article .srcs {
@@ -541,14 +575,185 @@ main .article .srcs {
   flex-direction: column;
 }
 main .article .srcs p {
-  font-size: 0.8rem;
+  font-size: 1rem;
 }
 main .article .srcs p span {
   font-weight: 700;
+  color: #2F4DDB;
 }
 main .article .srcs p:hover {
   cursor: pointer;
   text-decoration: underline;
+  text-underline-offset: 0.3rem;
+  text-decoration-color: #2F4DDB;
+}
+@media screen and (max-width: 768px) {
+  main .article .article {
+    display: flex;
+    padding: 0 1.75rem;
+    flex-direction: column;
+    gap: 2rem;
+  }
+  main .article .article .title {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: start;
+  }
+  main .article .article .title h1 {
+    font-size: 1rem;
+  }
+  main .article .article .content {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(1, 2fr);
+    gap: 2rem;
+  }
+}
+main .article .about {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 0 8.75rem;
+  gap: 2rem;
+}
+main .article .about .socials {
+  display: flex;
+  flex-direction: column;
+  background-color: #2F4DDB;
+  color: white;
+  width: 30%;
+  border-radius: 0.4rem;
+  padding: 3rem 2rem;
+  gap: 2rem;
+}
+main .article .about .socials div {
+  display: flex;
+  flex-direction: column;
+}
+main .article .about .socials div h3 {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+main .article .about .socials div p {
+  font-size: 0.8rem;
+  font-weight: 400;
+}
+main .article .about .socials .social {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 1rem;
+}
+main .article .about .socials .social img {
+  width: 5vh;
+  height: 5vh;
+}
+main .article .about .socials .social a {
+  font-size: 0.8rem;
+  font-weight: 500;
+  color: white;
+  text-decoration: none;
+}
+main .article .about .socials .social a:hover {
+  text-decoration: underline;
+  text-underline-offset: 0.2rem;
+}
+main .article .about form {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  width: 60%;
+}
+main .article .about form div {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 1rem;
+  width: 100%;
+}
+main .article .about form .champ {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+main .article .about form .champ label {
+  font-size: 0.8rem;
+  font-weight: 400;
+  color: rgba(0, 0, 0, 0.5);
+}
+main .article .about form .champ .t-darkmode {
+  color: #f1f9fc;
+}
+main .article .about form .champ input,
+main .article .about form .champ select,
+main .article .about form .champ textarea {
+  padding: 0.75rem 1rem;
+  color: rgb(30, 30, 30);
+  border: none;
+  border-bottom: 1.5px solid rgb(30, 30, 30);
+  font-size: 0.8rem;
+  font-weight: 400;
+  width: 100%;
+  outline: none;
+  align-items: center;
+  justify-content: center;
+}
+main .article .about form .champ input::-moz-placeholder, main .article .about form .champ select::-moz-placeholder, main .article .about form .champ textarea::-moz-placeholder {
+  color: rgb(30, 30, 30);
+}
+main .article .about form .champ input::placeholder,
+main .article .about form .champ select::placeholder,
+main .article .about form .champ textarea::placeholder {
+  color: rgb(30, 30, 30);
+}
+main .article .about form .champ input:active,
+main .article .about form .champ input:focus,
+main .article .about form .champ textarea:active,
+main .article .about form .champ textarea:focus,
+main .article .about form .champ select:active,
+main .article .about form .champ select:focus {
+  outline: none;
+}
+main .article .about form .valid {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 1rem;
+}
+main .article .about form .valid input {
+  background-color: #2F4DDB;
+  color: white;
+  border: none;
+  padding: 0.5rem 3rem;
+  border-radius: 0.3rem;
+  font-weight: 700;
+  font-size: 1rem;
+  text-align: center;
+  width: object-fit;
+}
+@media screen and (max-width: 768px) {
+  main .article .about {
+    display: flex;
+    flex-direction: column;
+    padding: 0 1.75rem;
+    gap: 5rem;
+  }
+  main .article .about .socials {
+    width: 100%;
+  }
+  main .article .about form {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    width: 100%;
+  }
+  main .article .about form .valid {
+    width: 100%;
+  }
+  main .article .about form .valid input {
+    width: 100%;
+  }
 }
 @media screen and (max-width: 768px) {
   main .article {
