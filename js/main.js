@@ -126,6 +126,32 @@ loope.addEventListener("click", () => {
   }
 })
 
+/*Burger Crounch crounch*/
+const burger = document.querySelector("#burger");
+const Opener = document.querySelector(".logo img");
+const closer = document.querySelector("#closer");
+
+Opener.addEventListener("click", () => {
+  burger.style.display = "flex";
+});
+
+closer.addEventListener("click", () => {
+  burger.style.display = "none";
+});
+
+const burgerLinks = document.querySelectorAll("#burger div a");
+burgerLinks.forEach((link) => {
+  link.classList.remove("active");
+});
+
+const currentPage = window.location.href;
+burgerLinks.forEach((link) => {
+  if (currentPage.includes(link.href)) {
+    link.classList.add("active");
+  }
+});
+
+
 /* Js Page Accueil */
 if (
   window.location.href.includes("index.html") ||

@@ -13,6 +13,44 @@
   color: #f1f9fc !important;
 }
 
+#burger {
+  display: none;
+  background-color: #FFFFFF;
+  position: absolute;
+  top: 9vh;
+  left: 0;
+  z-index: 10;
+  width: 70%;
+  height: 100vh;
+  box-shadow: 10px 5px 5px rgba(0, 0, 0, 0.1);
+  flex-direction: row;
+}
+
+#burger div {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  height: 100%;
+  width: 90%;
+}
+
+#burger img {
+  width: 40px;
+  height: 40px;
+  rotate: 180deg;
+  cursor: pointer;
+}
+
+#burger a {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  padding: 1.5rem 1.75rem;
+  font-size: 1.5rem;
+  font-weight: 700;
+  text-decoration: none;
+}
+
 nav {
   display: flex;
   flex-direction: row;
