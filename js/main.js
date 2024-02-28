@@ -381,6 +381,8 @@ if (window.location.href.includes("article.html")) {
 let favtag= true;
 let darktag = false;
 function dark_mode(){
+  let targetpatch = document.querySelectorAll(".info h3");
+  //console.log(targetpatch);
   const body = document.querySelector("body");
   const header = document.querySelector("header");
   const h1 = document.querySelector("h1");
@@ -394,17 +396,20 @@ function dark_mode(){
   const faviconblack = document.querySelector(".faviconblack");
   const label = document.querySelectorAll("label");
   body.classList.toggle("darkmode");
-  console.log(h3)
+  //console.log(h3)
   button.forEach(element => {
     element.classList.toggle("darkmodeCat");
   });
   h1.classList.toggle("darkmode");
   p.forEach(element => {
-    element.classList.toggle("t-darkmode");
+    element.classList.toggle("darkmode");
   });
   h3.forEach(element => {
-    console.log(element);
-    element.classList.toggle("t-darkmode");
+    //console.log(element);
+    element.classList.toggle("darkmode");
+  });
+  targetpatch.forEach(element => {
+    element.classList.toggle("darkmode");
   });
   img.forEach(element => {
     element.classList.toggle("t-darkmode");
@@ -427,17 +432,17 @@ function dark_mode(){
     header.classList.toggle("darkmode");
   }
   label.forEach(element => {
-    element.classList.toggle("t-darkmode");
+    element.classList.toggle("darkmode");
   });
   if (darktag === false) {
     localStorage.setItem("darkmode", "true");
-    console.log(localStorage.getItem("darkmode"));
+    //console.log(localStorage.getItem("darkmode"));
     darktag = true;
 
   }
   else {
     localStorage.setItem("darkmode", "false");
-    console.log(localStorage.getItem("darkmode"));
+    //console.log(localStorage.getItem("darkmode"));
     darktag = false;
   }
 

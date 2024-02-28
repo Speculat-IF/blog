@@ -18,7 +18,7 @@ $black: rgb(30, 30, 30);
 
   .darkmode {
     background-color: $black;
-    color: $color-secondary;
+    color: $color-secondary !important;
   }
 
 
