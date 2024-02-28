@@ -119,7 +119,8 @@ loope.addEventListener("click", () => {
     }
   }
   if (id != null) {
-    window.location.href = "article.html?id=" + id;
+    let slug = titre.split(" ").join("-");
+    window.location.href = "article.html?" + slug;
   }
   else {
     alert("L'article n'existe pas");
@@ -199,7 +200,8 @@ if (
           tumbnail.alt = "tubnail de l'article";
         });
         post.addEventListener("click", () => {
-          window.location.href = "article.html?id=" + reverse[i].id;
+          let slug = reverse[i].titre.split(" ").join("-");
+          window.location.href = "article.html?" + slug;
         });
       }
     })
@@ -283,8 +285,9 @@ if (window.location.href.includes("articles.html")) {
         post.appendChild(tumbnail);
         post.appendChild(info);
         post.addEventListener("click", () => {
-          console.log(curentArticle.id);
-          window.location.href = "article.html?id=" + curentArticle.id;
+          //console.log(curentArticle.id);
+          let slug = curentArticle.titre.split(" ").join("-");
+          window.location.href = "article.html?" + slug;
         });
         posts.appendChild(post);
       }
@@ -348,11 +351,16 @@ if (window.location.href.includes("article.html")) {
   fetch(url)
     .then((response) => response.json())
     .then((data) => {
-        console.log(data);
-        let searchParams = new URLSearchParams(window.location.search);
-        let id = searchParams.get("id");
-        let searchedArticle = data.articles.find((article) => article.id == id);
-        console.log(searchedArticle);
+        //console.log(data);
+        let url = window.location.href;
+        let slug = url.split("?")[1];
+        slug = decodeURIComponent(slug);
+        // console.log(slug);
+        // data.articles.forEach(article => {
+        //     console.log(article.titre.split(" ").join("-"));
+        // });
+        let searchedArticle = data.articles.find((article) => article.titre.split(" ").join("-") == slug);
+        //console.log(searchedArticle);
         let titre = document.querySelector(".titre");
         let span = document.createElement("span");
         let titreString = searchedArticle.titre;
