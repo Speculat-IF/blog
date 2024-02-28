@@ -382,6 +382,20 @@ main {
           display: flex;
           flex-direction: column;
 
+          .tags {
+            display: flex;
+            flex-direction: row;
+            gap: 10px;
+
+            span {
+              color: #ffffff !important;
+              background-color: $color-primary;
+              border-radius: 0.4rem;
+              border: 2px solid $color-primary;
+              padding: 0.5rem 1rem;
+            }
+          }
+
           p {
             font-size: 0.8rem;
           }
@@ -403,6 +417,8 @@ main {
             width: 100%;
             justify-content: space-between;
             color: $color-tertiary;
+            align-items: center;
+            margin-bottom: 20px;
 
             p:nth-child(1) {
               color: $color-primary;
@@ -443,9 +459,10 @@ main {
 
       .title {
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
         justify-content: space-between;
         width: 100%;
+        gap: 20px;
 
         h2 {
           font-size: 1.2rem;
@@ -456,7 +473,7 @@ main {
       .posts {
         display: flex;
         flex-direction: column;
-        gap: 2rem;
+        gap: 4rem;
         margin-top: 2rem;
 
         .others .desc {
@@ -537,8 +554,13 @@ main {
           }
 
           h3 {
-            font-size: 1.5rem;
-            font-weight: 700;
+            font-size: 1rem;
+            font-weight: 500;
+
+            span {
+              font-size: 1.5rem;
+              font-weight: 700;
+            }
           }
 
           div {
@@ -596,7 +618,7 @@ main {
       .posts {
         display: grid;
         grid-template-columns: repeat(1, 1fr);
-        gap: 3rem;
+        gap: 4rem;
         margin-top: 2rem;
 
         .post .infos {
@@ -933,7 +955,6 @@ main {
 
   }
 
-
   @media screen and (max-width: 768px) {
 
     .article {
@@ -1118,6 +1139,10 @@ main {
         gap: 2rem;
         width: 100%;
 
+        div {
+          flex-direction: column;
+        }
+
         .valid {
           width: 100%;
 
@@ -1132,6 +1157,7 @@ main {
 }
 
 .articles {
+  gap: 0;
   margin-top: 0;
 }
 
