@@ -429,6 +429,8 @@ function dark_mode(){
   const sun = document.querySelector(".sun");
   const faviconblack = document.querySelector(".faviconblack");
   const label = document.querySelectorAll("label");
+  const input = document.querySelectorAll(".about form .champ input");
+  const CFD = document.querySelectorAll(".CFD");
   body.classList.toggle("darkmode");
   //console.log(h3)
   button.forEach(element => {
@@ -450,6 +452,12 @@ function dark_mode(){
   });
   info.forEach(element => {
     element.classList.toggle("darkmode");
+  });
+  input.forEach(element => {
+    element.classList.toggle("InputDarkMode");
+  });
+  CFD.forEach(element => {
+    element.classList.toggle("InputDarkMode");
   });
   moon.classList.toggle("hidden");
   sun.classList.toggle("block");

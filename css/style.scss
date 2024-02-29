@@ -21,6 +21,12 @@ $black: rgb(30, 30, 30);
     color: $color-secondary !important;
   }
 
+  .InputDarkMode {
+    border-bottom: 1.5px solid $color-secondary !important;
+    color: $color-secondary !important;
+    background-color: $black !important;
+  }
+
   #burger {
     display: none;
     background-color: #FFFFFF;

@@ -13,6 +13,12 @@
   color: #f1f9fc !important;
 }
 
+.InputDarkMode {
+  border-bottom: 1.5px solid #f1f9fc !important;
+  color: #f1f9fc !important;
+  background-color: rgb(30, 30, 30) !important;
+}
+
 #burger {
   display: none;
   background-color: #FFFFFF;
