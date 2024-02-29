@@ -160,7 +160,55 @@
               "lien": "https://www.lesnumeriques.com/photo/un-capteur-astronomique-supersensible-a-supraconducteur-pu122941.html"
             }
         ]
-    }
+    },
+    {
+      "id": 5,
+      "titre": "Un ordinateur analogique capable de possiblement prévoir un avenir chaotique",
+      "date": "29/02/2024",
+      "auteur": "Arthur Prudhomme",
+      "tumbnail": "miniSuperCapteur.png",
+      "illustration": "IlluOneSuperCapteur.jpg/IlluTwoSuperCapteur.jpg",
+      "tags": [
+          "Social",
+          "Quantique"
+      ],
+      "contenu" : [
+        {"intro" : "Un système analogique mesure une variation continue d'une grandeur physique concrète. Alors qu’un système numérique mesure l'information par des valeurs sous forme binaire. Comme exemple, dans les ordinateurs personnels que nous utilisons tous les jours, l’information est traitée numériquement, une exception cependant serait le son. Bien qu’il soit stocké ou transporté numériquement il est reconverti en son format analogique originel afin que nos oreilles puissent l’entendre. Une manière encore différente de traiter l’information est d’utiliser un système quantique. Si on veut retracer chronologiquement ces technologies, on peut le faire par le premier ordinateur fonctionnant sous ces technologies. En premier vient l’analogique avec la Machine d'Anticythère créée en 87 av JC, est considérée comme le premier calculateur analogique antique permettant de calculer des positions astronomiques. Ensuite vient le numérique avec l'ENIAC en 1945 est le premier ordinateur Turing-complet entièrement électronique. Enfin vient en 2009 le premier processeur quantique."
+        },
+        {"partieOne" : "Pour bien comprendre il faut adresser les différences entre ces trois modes d’interprétations de l’information. L’analogique est comme un flux d’informations continu représentant une mesure physique précise du monde, comme par exemple le son. Le numérique est tel une pièce, pile ou face, une expréssion binaire qui pour les ordinateurs se traduit par un voltage fort ou faible pour exprimer un 1 ou un 0. Pour le présenter en opposition, le numérique est bien plus fiable car il restreint et encadre plus là où l’analogique est continu et complexe. Enfin le traitement quantique est merveilleusement bien illustré par l’exemple du chat de Schrodinger, tant que l’on ouvre pas la boite on ne peut savoir si le chat est vivant ou mort, avec l’exemple de la pièce, c’est comme si cette dernière tournait continuellement en surperposant ses deux faces, ce n’est que lorsque on ouvre la boîte, que lorsqu’on stop la pièce que l’on peut en savoir son état. Le sujet se base sur le calcul par réservoir, dérivé de la théorie des réseaux de neurones récurrents (RNN), le concept de calcul par réservoir découle de l'utilisation de connexions récursives au sein de réseaux de neurones pour créer un système dynamique complexe. Le réservoir dans le calcul par réservoir est la structure interne de l'ordinateur. Il doit avoir deux propriétés : être composé d'unités individuelles non linéaires et être capable de stocker des informations.La non-linéarité décrit la réponse de chaque unité à l'entrée, ce qui permet aux calculateurs par réservoir de résoudre des problèmes complexes. La représentation continue des données permet aux ordinateurs analogiques de modéliser certains événements naturels, ceux qui se produisent dans une sorte de séquence imprévisible appelée “série temporelle chaotique”, mieux qu'un ordinateur numérique. Pour prévoir des processus complexes tels que le changement climatique et la croissance démographique, il ne suffit pas juste de prendre un seau d’eau et d’y provoquer / observer des pertubations régulières, ce genre de système est trop limité et éphémère. En effet, il faut un réservoir doté de vagues plus durables. L’une des solutions est d’utiliser des “solitons” qui sont des vagues se renforçant elles-mêmes et qui conservent leur forme et se déplacent sur de longues distances. Des recherches mettent en évidence qu’avec une installation minutieuse de ce procédé la capacité de l’ordinateur à mémoriser les entrées passées et à faire des prévisions pour un ensemble de données chaotiques et aléatoires ne sont non seulement pas que exceptionnellement bien exécutées, mais a également que ce dernier surpasse un ordinateur numérique hautes performances pour les mêmes tâches et problèmes."
+        },
+        {"partiTwo" : "En rattachant ce concept à celui du chaos prédictif on pourrait toucher du doigt un système capable de prévoir des événements de moyenne à grande ampleur avec précision. La théorie du chaos est une théorie rattachée aux mathématiques et à la physique qui étudie le comportement des systèmes dynamiques sensibles aux conditions initiales, un phénomène généralement illustré par l'effet papillon, en effet ils sont déterminés par les conditions initiales, sans aucune intervention du hasard, ils sont imprévisibles (au moins dans le détail). Il est possible de rattacher le concept d’un tel système à la fiction avec le Cycle des Fondations de Isaac Asimov avec la Psychohistoire, une science dont le but est de prévoir l'avenir à partir des connaissances sur la psychologie humaine et les phénomènes sociaux en appliquant une analyse statistique. Mais allons plus loin et imaginons, de manière complètement hypothétique, ce que pourrait être le futur avec cette technologie. La Psychohistoire citée précédemment pourrait ne pas simplement être de la fiction, avec des technologies suffisamment avancées et une masse suffisamment importante de données, les prédictions pourraient s’avérer éxacte pour prévoir des cataclysmes, des désatres, des guerres… Cela reste généraliste, mais imaginons un instant qu’un tel système puisse non pas prédire des événéments d’ampleur mais aussi avec précision de petits événements, à la manière de Minority Report, où une machine est capable de prédire les meurtres à l’avance et ainsi permet de les empécher avec une intervention humaine, ce qui dans un sens à sauver une vie mais celui qui était censé la prendre n’est jamais passer à l’acte mais ce fait tout de même emprisonner. À la fois il serait possible de sauver la vie de milliers voir millions de personnes, mais potentiellement au prix du libre arbitre, ou même pire en prouvant la fiabilité de ce système et en l’utilisant pour ses propres intérêts, ce qui était censé aider et sauver des vies se transforme en un outil de manipulation de masse absolue."
+        },
+        {"conslusion" : "Au final il est possible de trouver autant d’avantages que d’inconvénients dans l’hypothétique. Notre devoir est, devant ces questions, de voir les choses avec pragmatisme sans les teinter par nos peurs ou nos réjouissances. Notre plus grande arme devant ces problématiques c’est le doute, car lorsque vous avez éliminé l'impossible, ce qui reste, si improbable soit-il, est nécessairement la vérité."
+        }
+      ],
+      "source": [
+          {
+              "nom": "Source 1",
+              "lien": "https://interestingengineering.com/innovation/unleashing-the-power-of-water-researchers-build-analog-computer-to-forecast-chaotic-futures"
+          },
+          {
+              "nom": "Source 2",
+              "lien": "https://www.youtube.com/watch?v=ZMkLPvOVkNo"
+          },
+          {
+              "nom": "Source 3",
+              "lien": "https://www.mdpi.com/1996-1073/16/14/5366"
+          },
+          {
+              "nom": "Source 4",
+              "lien": "https://spectrum.ieee.org/analog-computer-spin-wave"
+          },
+          {
+            "nom": "Source 5",
+            "lien": "https://phys.org/news/2023-05-built-analogue-chaotic-future.html"
+          },
+          {
+            "nom": "Source 6",
+            "lien": "https://phys.org/news/2023-05-built-analogue-chaotic-future.html"
+          }
+      ]
+  }
           
     ]
 }
