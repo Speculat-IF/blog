@@ -82,6 +82,9 @@ nav div:nth-child(1) .logo p {
   font-weight: 600;
   color: rgb(30, 30, 30);
 }
+nav div:nth-child(1) .logo a {
+  text-decoration: none;
+}
 nav div:nth-child(1) .menu {
   display: flex;
   flex-direction: row;
@@ -337,6 +340,12 @@ main .most_recent .posts .post .infos .tags span {
   border-radius: 0.4rem;
   border: 2px solid #2F4DDB;
   padding: 0.5rem 1rem;
+}
+main .most_recent .posts .post .infos .tags span:hover {
+  cursor: pointer;
+  background-color: #f1f9fc;
+  color: #2F4DDB !important;
+  transition: all 0.3s ease-in-out;
 }
 main .most_recent .posts .post .infos p {
   font-size: 0.8rem;
@@ -833,6 +842,47 @@ main .article .about form .valid input {
     display: grid;
     grid-template-columns: repeat(1, 2fr);
     gap: 2rem;
+  }
+  main .article .content p {
+    font-size: 1rem;
+    font-weight: 400;
+    color: rgb(30, 30, 30);
+  }
+  main .article .content .parts {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+  main .article .content .parts #partieOne,
+  main .article .content .parts #partieTwo {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+  main .article .content .parts #partieOne div,
+  main .article .content .parts #partieTwo div {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 2rem;
+  }
+  main .article .content .parts #partieOne div #partOneTwo, main .article .content .parts #partieOne div img,
+  main .article .content .parts #partieTwo div #partOneTwo,
+  main .article .content .parts #partieTwo div img {
+    display: flex;
+    width: 100% !important;
+  }
+  main .article .content .parts img {
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+    border-radius: 0.4rem;
+    height: auto;
+    object-fit: cover;
+  }
+  main .article .content .parts .t-darkmode {
+    color: #f1f9fc;
   }
 }
 main .about {
