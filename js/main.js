@@ -351,16 +351,16 @@ if (window.location.href.includes("article.html")) {
   fetch(url)
     .then((response) => response.json())
     .then((data) => {
-        //console.log(data);
+        console.log(data);
         let url = window.location.href;
         let slug = url.split("?")[1];
         slug = decodeURIComponent(slug);
-        // console.log(slug);
-        // data.articles.forEach(article => {
-        //     console.log(article.titre.split(" ").join("-"));
-        // });
+        console.log(slug);
+        data.articles.forEach(article => {
+            console.log(article.titre.split(" ").join("-"));
+        });
         let searchedArticle = data.articles.find((article) => article.titre.split(" ").join("-") == slug);
-        //console.log(searchedArticle);
+        console.log(searchedArticle);
         let titre = document.querySelector(".titre");
         let span = document.createElement("span");
         let titreString = searchedArticle.titre;

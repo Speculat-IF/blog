@@ -38,8 +38,8 @@
                 "lien": "https://ccn.unistra.fr/websites/ccn/documentation/Sante-Ethique-Handicap/ICM_final_20201016.pdf"
               }
             ]
-          },
-          {
+        },
+        {
             "id": 2,
             "titre": "Informatique Quantique : Chiffrement post-quantique, l'avenir de la cybersécurité",
             "date": "02/12/2023",
@@ -117,8 +117,8 @@
                   "lien": "https://edition.cnn.com/2023/03/02/world/brain-computer-organoids-scn/index.html"
               }
           ]
-      },
-      {
+        },
+        {
         "id": 4,
         "titre": "L'Ère des Super-capteurs : Entre Innovation et Préoccupations sur la Vie Privée",
         "date": "10/01/2024",
@@ -160,8 +160,8 @@
               "lien": "https://www.lesnumeriques.com/photo/un-capteur-astronomique-supersensible-a-supraconducteur-pu122941.html"
             }
         ]
-    },
-    {
+        },
+        {
       "id": 5,
       "titre": "Un ordinateur analogique capable de possiblement prévoir un avenir chaotique",
       "date": "29/02/2024",
@@ -208,46 +208,45 @@
             "lien": "https://phys.org/news/2023-05-built-analogue-chaotic-future.html"
           }
       ]
-  },
-  {
-    "id": 6,
-    "titre": "Comment les pompes à chaleur des années 1800 deviennent-elles la technologie du futur ?",
-    "date": "14/03/2024",
-    "auteur": "Pierre-Louis Sans",
-    "tumbnail": "miniPAC.jpg",
-    "illustration": "IlluOnePAC.jpg/IlluTwoPAC.jpg",
-    "tags": [
-        "Social"
-    ],
-    "contenu" : [
-      {"intro" : "Les pompes à chaleur… Loin d'être la première à laquelle on pense quand on souhaite installer un système de chauffage chez soi, cela reste une alternative qui a de l’avenir.Entre 1855 et 1857, l’Autrichien Peter von Rittinger met au point la première ébauche de pompe à chaleur : un dispositif captant l’énergie thermique de la vapeur d’eau des salines d’Ebensee. Depuis cette époque le système s'est modernisé. Il en existe différents types en fonction des milieux où la chaleur est captée et relâchée. On retrouve donc les pompes géothermiques (captant la chaleur sous terre), hydrothermiques (captant la chaleur dans l’eau) et aérothermiques (captant la chaleur dans l’air). Nous allons à présent nous concentrer sur les pompes aérothermiques, et étudier plus en détail son fonctionnement."
-      },
-      {"partieOne" : "Le fonctionnement d’une pompe à chaleur est assez simple. On note trois éléments importants : le compresseur, le détendeur et le fluide caloporteur (caloporteur signifie qui transporte la chaleur). Grâce au compresseur et au détendeur le système maintient deux zones, une zone de basse pression pour la partie de la pompe a l’extérieur du domicile et une zone de haute pression pour la partie de la pompe dans le domicile. Grâce au compresseur et au détendeur, le système possède deux parties avec des pressions différentes. Une zone de basse pression pour la partie de la pompe a l’extérieur du domicile, et une zone de haute pression pour la partie de la pompe dans le domicile. Le fluide caloporteur arrive dans la zone de basse pression à l'état liquide. ( Cette phrase fait un peu rajoutée là parce qu’il fallait la mettre, mais sans trop savoir comment ) Ces propriétés thermique et la basse pression environnante lui permettent de facilement s’évaporer, passant de l’état liquide à gazeux. Le fluide caloporteur, à l’état gazeux, fait sont chemin jusqu’au compresseur qui va l’envoyer dans la zone de haute pression à l’intérieur de la maison. Cette forte pression va forcer le fluide caloporteur à se liquéfier, passant de l’état gazeux à l’état liquide. Le fluide caloporteur, maintenant à l’état liquide, va donc pouvoir céder sa chaleur en chauffant le domicile. Il va ensuite être renvoyé par le détendeur vers la zone de basse pression où il pourra recommencer ce cycle. Dans le modèle ci-dessus nous parlons d’un système à un étage, il existe des modèles à deux étages mais ils sont très coûteux et donc peu appréciés. "
-      },
-      {"partiTwo" : "Comme les pompes à chaleur utilisent de l'électricité pour faire fonctionner le compresseur et le détendeur, leur rendement est mesuré avec le COP (coefficient of performance). Un COP de 3, par exemple, signifie qu’un kWh d'électricité produit 3 kWh de chaleur. Il est important de noter que les PAC modernes sont réversibles, permettant non seulement de chauffer son domicile en hiver mais aussi de le rafraîchir en été. Cette technologie qui à déjà connu un regain de popularité indirecte avec l’augmentation du prix du gaz, causé par la guerre entre l’Ukraine et la Fédération de Russie va continuer. De nombreux scientifiques travaillent à améliorer les pompes à chaleur pour résoudre des problèmes tels que le gel et l'optimisation du rendement, contribuant ainsi à maintenir cette montée en popularité. Zhibin Yu, qui travaille à l'Université de Glasgow, au Royaume-Uni, a réfléchi au problème pendant longtemps. Il propose un nouveau modèle pour les POC, fonctionnant en mode quasi-deux étages pour pouvoir économiser jusqu'à 20 % de la consommation électrique du compresseur, par rapport aux cycles à un étage. Yu par du constat qu’une partie de la chaleur transportée par le liquide caloporteur n’est pas utilisée et est donc perdue. Il cherche donc avec son modèle à capter et emmagasiner cette chaleur en la stockant dans une partie dédiée."
-      },
-      {"conslusion" : "L'énergie thermique récupérée, stockée à une température élevée dans le stockage de chaleur, est utilisée comme source de chaleur temporaire pour la pompe à chaleur pendant le mode de décharge. Cela conduit à deux applications bénéfiques, à la fois augmenter le COP, et réduire la puissance du compresseur. Les PAC ne sont néanmoins pas sans risque, en cas de dysfonctionnement ces derniers peuvent causer des dangers importants, notamment s'ils explosent. Les progrès scientifiques dans l'amélioration des pompes à chaleur, l'augmentation des prix des énergies fossiles due aux crises, ainsi que la transition écologique, vont tous favoriser l'adoption croissante des pompes à chaleur dans de nombreux foyers.*"
-      }
-    ],
-    "source": [
-        {
-            "nom": "Source 1",
-            "lien": "https://www.philomag.com/articles/petite-mythologie-de-la-pompe-chaleur#:~:text=Entre%201855%20et%201857%2C%20l,eau%20des%20salines%20d'Ebensee."
         },
         {
-            "nom": "Source 2",
-            "lien": "https://knowablemagazine.org/content/article/technology/2023/heat-pumps-becoming-technology-future"
-        },
-        {
-            "nom": "Source 3",
-            "lien": "https://www.nature.com/articles/s44172-022-00018-3"
-        },
-        {
-            "nom": "Source 4",
-            "lien": "https://www.aria.developpement-durable.gouv.fr/accident/51086/"
-        }
-    ]
-  }
-          
+          "id": 6,
+          "titre": "Comment les pompes à chaleur des années 1800 deviennent-elles la technologie du futur",
+          "date": "14/03/2024",
+          "auteur": "Pierre-Louis Sans",
+          "tumbnail": "miniPAC.jpg",
+          "illustration": "IlluOnePAC.jpg/IlluTwoPAC.jpg",
+          "tags": [
+              "Social"
+          ],
+          "contenu" : [
+            {"intro" : "Les pompes à chaleur… Loin d'être la première à laquelle on pense quand on souhaite installer un système de chauffage chez soi, cela reste une alternative qui a de l’avenir.Entre 1855 et 1857, l’Autrichien Peter von Rittinger met au point la première ébauche de pompe à chaleur : un dispositif captant l’énergie thermique de la vapeur d’eau des salines d’Ebensee. Depuis cette époque le système s'est modernisé. Il en existe différents types en fonction des milieux où la chaleur est captée et relâchée. On retrouve donc les pompes géothermiques (captant la chaleur sous terre), hydrothermiques (captant la chaleur dans l’eau) et aérothermiques (captant la chaleur dans l’air). Nous allons à présent nous concentrer sur les pompes aérothermiques, et étudier plus en détail son fonctionnement."
+            },
+            {"partieOne" : "Le fonctionnement d’une pompe à chaleur est assez simple. On note trois éléments importants : le compresseur, le détendeur et le fluide caloporteur (caloporteur signifie qui transporte la chaleur). Grâce au compresseur et au détendeur le système maintient deux zones, une zone de basse pression pour la partie de la pompe a l’extérieur du domicile et une zone de haute pression pour la partie de la pompe dans le domicile. Grâce au compresseur et au détendeur, le système possède deux parties avec des pressions différentes. Une zone de basse pression pour la partie de la pompe a l’extérieur du domicile, et une zone de haute pression pour la partie de la pompe dans le domicile. Le fluide caloporteur arrive dans la zone de basse pression à l'état liquide. ( Cette phrase fait un peu rajoutée là parce qu’il fallait la mettre, mais sans trop savoir comment ) Ces propriétés thermique et la basse pression environnante lui permettent de facilement s’évaporer, passant de l’état liquide à gazeux. Le fluide caloporteur, à l’état gazeux, fait sont chemin jusqu’au compresseur qui va l’envoyer dans la zone de haute pression à l’intérieur de la maison. Cette forte pression va forcer le fluide caloporteur à se liquéfier, passant de l’état gazeux à l’état liquide. Le fluide caloporteur, maintenant à l’état liquide, va donc pouvoir céder sa chaleur en chauffant le domicile. Il va ensuite être renvoyé par le détendeur vers la zone de basse pression où il pourra recommencer ce cycle. Dans le modèle ci-dessus nous parlons d’un système à un étage, il existe des modèles à deux étages mais ils sont très coûteux et donc peu appréciés. "
+            },
+            {"partiTwo" : "Comme les pompes à chaleur utilisent de l'électricité pour faire fonctionner le compresseur et le détendeur, leur rendement est mesuré avec le COP (coefficient of performance). Un COP de 3, par exemple, signifie qu’un kWh d'électricité produit 3 kWh de chaleur. Il est important de noter que les PAC modernes sont réversibles, permettant non seulement de chauffer son domicile en hiver mais aussi de le rafraîchir en été. Cette technologie qui à déjà connu un regain de popularité indirecte avec l’augmentation du prix du gaz, causé par la guerre entre l’Ukraine et la Fédération de Russie va continuer. De nombreux scientifiques travaillent à améliorer les pompes à chaleur pour résoudre des problèmes tels que le gel et l'optimisation du rendement, contribuant ainsi à maintenir cette montée en popularité. Zhibin Yu, qui travaille à l'Université de Glasgow, au Royaume-Uni, a réfléchi au problème pendant longtemps. Il propose un nouveau modèle pour les POC, fonctionnant en mode quasi-deux étages pour pouvoir économiser jusqu'à 20 % de la consommation électrique du compresseur, par rapport aux cycles à un étage. Yu par du constat qu’une partie de la chaleur transportée par le liquide caloporteur n’est pas utilisée et est donc perdue. Il cherche donc avec son modèle à capter et emmagasiner cette chaleur en la stockant dans une partie dédiée."
+            },
+            {"conslusion" : "L'énergie thermique récupérée, stockée à une température élevée dans le stockage de chaleur, est utilisée comme source de chaleur temporaire pour la pompe à chaleur pendant le mode de décharge. Cela conduit à deux applications bénéfiques, à la fois augmenter le COP, et réduire la puissance du compresseur. Les PAC ne sont néanmoins pas sans risque, en cas de dysfonctionnement ces derniers peuvent causer des dangers importants, notamment s'ils explosent. Les progrès scientifiques dans l'amélioration des pompes à chaleur, l'augmentation des prix des énergies fossiles due aux crises, ainsi que la transition écologique, vont tous favoriser l'adoption croissante des pompes à chaleur dans de nombreux foyers.*"
+            }
+          ],
+          "source": [
+              {
+                  "nom": "Source 1",
+                  "lien": "https://www.philomag.com/articles/petite-mythologie-de-la-pompe-chaleur#:~:text=Entre%201855%20et%201857%2C%20l,eau%20des%20salines%20d'Ebensee."
+              },
+              {
+                  "nom": "Source 2",
+                  "lien": "https://knowablemagazine.org/content/article/technology/2023/heat-pumps-becoming-technology-future"
+              },
+              {
+                  "nom": "Source 3",
+                  "lien": "https://www.nature.com/articles/s44172-022-00018-3"
+              },
+              {
+                  "nom": "Source 4",
+                  "lien": "https://www.aria.developpement-durable.gouv.fr/accident/51086/"
+              }
+          ]
+        }     
     ]
 }
