@@ -226,7 +226,7 @@
             },
             {"partiTwo" : "Comme les pompes à chaleur utilisent de l'électricité pour faire fonctionner le compresseur et le détendeur, leur rendement est mesuré avec le COP (coefficient of performance). Un COP de 3, par exemple, signifie qu’un kWh d'électricité produit 3 kWh de chaleur. Il est important de noter que les PAC modernes sont réversibles, permettant non seulement de chauffer son domicile en hiver mais aussi de le rafraîchir en été. Cette technologie qui à déjà connu un regain de popularité indirecte avec l’augmentation du prix du gaz, causé par la guerre entre l’Ukraine et la Fédération de Russie va continuer. De nombreux scientifiques travaillent à améliorer les pompes à chaleur pour résoudre des problèmes tels que le gel et l'optimisation du rendement, contribuant ainsi à maintenir cette montée en popularité. Zhibin Yu, qui travaille à l'Université de Glasgow, au Royaume-Uni, a réfléchi au problème pendant longtemps. Il propose un nouveau modèle pour les POC, fonctionnant en mode quasi-deux étages pour pouvoir économiser jusqu'à 20 % de la consommation électrique du compresseur, par rapport aux cycles à un étage. Yu par du constat qu’une partie de la chaleur transportée par le liquide caloporteur n’est pas utilisée et est donc perdue. Il cherche donc avec son modèle à capter et emmagasiner cette chaleur en la stockant dans une partie dédiée."
             },
-            {"conslusion" : "L'énergie thermique récupérée, stockée à une température élevée dans le stockage de chaleur, est utilisée comme source de chaleur temporaire pour la pompe à chaleur pendant le mode de décharge. Cela conduit à deux applications bénéfiques, à la fois augmenter le COP, et réduire la puissance du compresseur. Les PAC ne sont néanmoins pas sans risque, en cas de dysfonctionnement ces derniers peuvent causer des dangers importants, notamment s'ils explosent. Les progrès scientifiques dans l'amélioration des pompes à chaleur, l'augmentation des prix des énergies fossiles due aux crises, ainsi que la transition écologique, vont tous favoriser l'adoption croissante des pompes à chaleur dans de nombreux foyers.*"
+            {"conslusion" : "L'énergie thermique récupérée, stockée à une température élevée dans le stockage de chaleur, est utilisée comme source de chaleur temporaire pour la pompe à chaleur pendant le mode de décharge. Cela conduit à deux applications bénéfiques, à la fois augmenter le COP, et réduire la puissance du compresseur. Les PAC ne sont néanmoins pas sans risque, en cas de dysfonctionnement ces derniers peuvent causer des dangers importants, notamment s'ils explosent. Les progrès scientifiques dans l'amélioration des pompes à chaleur, l'augmentation des prix des énergies fossiles due aux crises, ainsi que la transition écologique, vont tous favoriser l'adoption croissante des pompes à chaleur dans de nombreux foyers."
             }
           ],
           "source": [
@@ -245,6 +245,49 @@
               {
                   "nom": "Source 4",
                   "lien": "https://www.aria.developpement-durable.gouv.fr/accident/51086/"
+              }
+          ]
+        },
+        {
+          "id": 7,
+          "titre": "La prochaine frontière pourrait-elle être la neurotechnologie ?",
+          "date": "21/03/2024",
+          "auteur": "Ethan Delcroix",
+          "tumbnail": "miniPFN.jpg",
+          "illustration": "IlluOnePFN.jpg/IlluTwoPFN.jpg",
+          "tags": [
+              "Social"
+          ],
+          "contenu" : [
+            {"intro" : "La neuro-technologie est une technologie qui se sert de neurones artificiels, capables de communiquer avec le cerveau humain ou de le remplacer. Cette technologie peut ainsi combler un ou des déficits corporels tels que la perte d’un membre, comme dans le cas d’un bras bionique remplaçant un bras perdu. Bien qu’actuellement, la science ne permette pas encore de créer des membres artificiels capables de répondre parfaitement aux signaux neuronaux, ce dû au fait que les neuro-technologies sont encore un domaine très récent, il est néanmoins envisageable que les progrès dans ce domaine ouvrent la voie à des avancées significatives."
+            },
+            {"partieOne" : "Les futures avancées dans le domaine de la neuro-technologie pourront nous permettre de transcender les limites humaines, telles que les limites physiques/mentales et intellectuelles. Aujourd’hui l’être humain est bloqué par sa limite physique, qui varie chez chaque individu et peut rendre certaines tâches plus compliquées, telle qu'un handicap physique rendant la mobilité réduite. Dans le cas présent, la neuro-technologie pourrait pallier ces problèmes et rendre leur mobilité aux personnes concernées, ou dans un autre cas renforcer les capacités de personnes sans symptômes ni handicaps, leur permettant ainsi d’accomplir des tâches qui étaient auparavant  impossibles sans ces prothèses. Limite mental: Aujourd’hui, on sait que le cerveau est un ordinateur biologique extrêmement puissant, capable de stocker énormément de données, mais le cerveau a une limite bien qu’inconnue. Avec l’amélioration rapide de la technologie,nous pourrions bientôt être en mesure de déterminer les limites du cerveau humain, mais aussi de les dépasser grâce à l'implantation de neuro-technologie dans le cerveau. Cette avancée pourrait accélérer les temps de réactions et de réflexions chez l’être humain, facilitant ainsi la génération rapide de solutions et d’idées. De plus,il sera aussi possible de les représenter sous forme numérique, afin de se créer une vision en temps réel de ce que l’on s'imagine."
+            },
+            {"partiTwo" : "Limite intellectuel: Aujourd’hui la connaissance humaine est limitée dans bien des domaines, et l’ajout de la neuro-technologie pourrait pallier ces soucis. En améliorant les capacités de compréhension et de réflexion, elle propose des réponses auxquelles il n’est pas possible d’arriver aujourd’hui avec nos connaissances. Les neuro-technologies permettront ainsi de faciliter l'unification et le partage des connaissances humaines, ainsi que d'étendre le champ des possibles. Les inégalités qui apparaîtront suite à l’apparition de la neurotechnologie: L’arrivée de la neuro-technologie peut grandement améliorer la vie des êtres humains, cependant bien qu’elle apporte beaucoup de choses, elle va aussi créer de nombreuses inégalités. En effet, l'implantation de neuro-techniques sera coûteuse, demandera de réaliser des opérations dangereuses et ne sera donc pas accessible à tous. Aujourd’hui l’économie humaine est instable et les niveaux de richesse varient considérablement d’une personne à l’autre. Ainsi les personnes qui y auront accès ne seront pas forcément les personnes qui en ont besoin..."
+            },
+            {"conslusion" : "Grâce à toutes les informations présentées précédemment, on remarque qu’une frontière sera créée avec l'arrivée de la neurotechnologie. Elle ne sera pas forcément due aux inégalités mais plutôt à l’évolution vers une pluralité d’existences humaines. Les humains biomécaniques et les humains biologiques."
+            }
+          ],
+          "source": [
+              {
+                  "nom": "Source 1",
+                  "lien": "https://www.cnet.com/tech/computing/i-wore-the-future-of-brain-connected-arvr/"
+              },
+              {
+                  "nom": "Source 2",
+                  "lien": "https://apolitical.co/solution-articles/fr/quest-ce-que-la-neurotechnologie-et-pourquoi-cela-devrait-il-importer-aux-decideurs"
+              },
+              {
+                  "nom": "Source 3",
+                  "lien": "https://www.unesco.org/fr/ethics-neurotech"
+              },
+              {
+                  "nom": "Source 4",
+                  "lien": "https://www.college-de-france.fr/fr/agenda/lecon-inaugurale/la-neurotechnologie-science-et-ingenierie-pour-de-nouvelles-therapies"
+              },
+              {
+                "nom": "Source 5",
+                "lien": "https://fr.quora.com/Quelles-sont-les-limites-de-lintelligence-humaine#:~:text=N%C3%A9anmoins%2C%20certaines%20limites%20sont%20d%C3%A9j%C3%A0,objets%20inintelligibles%2C%20impossibles%20%C3%A0%20appr%C3%A9hender."
               }
           ]
         }     
