@@ -250,7 +250,7 @@
         },
         {
           "id": 7,
-          "titre": "La prochaine frontière pourrait-elle être la neurotechnologie ?",
+          "titre": "La prochaine frontière pourrait-elle être la neurotechnologie",
           "date": "21/03/2024",
           "auteur": "Ethan Delcroix",
           "tumbnail": "miniPFN.jpg",
@@ -290,6 +290,88 @@
                 "lien": "https://fr.quora.com/Quelles-sont-les-limites-de-lintelligence-humaine#:~:text=N%C3%A9anmoins%2C%20certaines%20limites%20sont%20d%C3%A9j%C3%A0,objets%20inintelligibles%2C%20impossibles%20%C3%A0%20appr%C3%A9hender."
               }
           ]
-        }     
+        },
+        {
+          "id": 8,
+          "titre": "Confidentialité : Souhaiter que les coopératives soient l’avenir de la propriété des données",
+          "date": "28/03/2024",
+          "auteur": "Ali Abbas",
+          "tumbnail": "miniCSPD.jpg",
+          "illustration": "IlluOneCSPD.jpg/IlluTwoCSPD.jpg",
+          "tags": [
+              "Social"
+          ],
+          "contenu" : [
+            {"intro" : "Avant de plonger dans l'ère des coopératives de données, il est crucial de comprendre le paysage actuel de la propriété des données. Dans l'économie numérique actuelle, les utilisateurs consentent souvent à céder leurs données personnelles sans vraiment comprendre les implications. Les conditions d'utilisation sont acceptées de manière apathique, laissant les utilisateurs à la merci des grandes entreprises technologiques qui monopolisent leurs données."
+            },
+            {"partieOne" : "Dans le contexte de la propriété des données, les entreprises technologiques ont longtemps été les principaux détenteurs et manipulateurs des informations personnelles des utilisateurs. Ces entreprises utilisent les données pour alimenter leurs algorithmes, cibler les publicités et façonner l'expérience numérique des utilisateurs. Cependant, cette centralisation des données pose des risques pour la vie privée et la sécurité des individus. La vision des coopératives de données, promue par le professeur Alex Pentland et ses collègues du MIT, propose une alternative radicale à ce paradigme. Plutôt que de laisser les données entre les mains des géants technologiques, les coopératives de données visent à rendre le contrôle des données aux utilisateurs eux-mêmes, en particulier à travers les mouvements de coopératives de crédit. Dans un monde où les coopératives de données sont répandues, les utilisateurs seraient membres de ces coopératives via leurs coopératives de crédit locales. Ils auraient la possibilité de partager leurs données dans un coffre-fort numérique contrôlé par la coopérative, tout en conservant un contrôle strict sur l'utilisation et l'accès à ces données."
+            },
+            {"partiTwo" : "L'avènement des coopératives de données ouvrirait de nouvelles voies vers une utilisation éthique et transparente des informations personnelles. Les membres pourraient bénéficier de tarifs préférentiels, négociés collectivement, pour les produits et services basés sur leurs habitudes d'achat ou leurs préférences. Cependant, l'adoption généralisée des coopératives de données ne serait pas sans défis. Des questions de gouvernance, de sécurité des données et de responsabilité juridique devraient être résolues pour garantir que les membres bénéficient pleinement de ce modèle. Malgré les défis, la montée en puissance des coopératives de données représente une lueur d'espoir dans un paysage numérique souvent dominé par les intérêts commerciaux. En donnant aux utilisateurs le contrôle sur leurs propres données, ce mouvement pourrait potentiellement remodeler l'économie numérique vers un modèle plus équitable et démocratique. Dans l'ensemble, la vision de Pentland et d'autres défenseurs des coopératives de données offre une voie prometteuse vers un avenir où la propriété des données est démocratisée et où les intérêts des individus priment sur ceux des grandes entreprises."
+            },
+            {"conslusion" : "En conclusion, les coopératives de données offrent une vision audacieuse mais réalisable de l'avenir de la propriété des données, où les utilisateurs ne sont plus des produits, mais des participants actifs dans la gestion et l'utilisation de leurs informations personnelles."
+            }
+          ],
+          "source": [
+              {
+                  "nom": "Source 1",
+                  "lien": ""
+              },
+              {
+                  "nom": "Source 2",
+                  "lien": ""
+              },
+              {
+                  "nom": "Source 3",
+                  "lien": ""
+              },
+              {
+                  "nom": "Source 4",
+                  "lien": ""
+              },
+              {
+                "nom": "Source 5",
+                "lien": ""
+              }
+          ]
+        },
+        {
+          "id": 9,
+          "titre": "Voiture autonome : Vers un avenir incertain entre sûreté et dilemmes éthiques",
+          "date": "04/04/2024",
+          "auteur": "Pierre-Louis Sans",
+          "tumbnail": "miniSDC.jpg",
+          "illustration": "IlluOneSDC.jpg/IlluTwoSDC.jpg",
+          "tags": [
+              "Social"
+          ],
+          "contenu" : [
+            {"intro" : "Depuis l'avènement de la première automobile par Karl Benz en 1886, la voiture a subi d'innombrables mutations, reflétant les avancées technologiques et les aspirations de la société. Si, initialement, elle était une simple mécanique contrôlée par un conducteur, aujourd'hui, nous sommes à l'aube d'une révolution : celle de la voiture autonome."
+            },
+            {"partieOne" : "Historiquement, la conduite d'un véhicule nécessitait la présence physique d'un conducteur, manipulant volant, pédales et leviers. Cette interaction homme-machine, bien que familière, n'est pas exempte de failles, principalement dues aux limites humaines. Cependant, l'idée d'une machine capable de se mouvoir sans intervention humaine n'est pas nouvelle. L'aspirateur autonome, par exemple, nettoie nos maisons en toute indépendance, tandis que des drones survolent et cartographient des territoires sans pilote. Ces avancées ont ouvert la voie aux véhicules autonomes. La voiture autonome, une entité capable de naviguer sans conducteur ni passager, grâce à une intelligence artificielle sophistiquée qui interprète en temps réel données sensorielles et informations de navigation collectées grâce à la multitude de capteurs du véhicule. Ces voitures autonomes sont plus proches que jamais, notamment grâce à des marques comme Tesla qui repousse continuellement les limites actuelles."
+            },
+            {"partiTwo" : "L'horizon semble prometteur, avec la perspective de véhicules 100% autonomes, capables de nous transporter d'un point A à un point B en toute sécurité. Les bénéfices potentiels sont multiples: Une réduction significative des accidents de la route, souvent imputables à des erreurs humaines (fatigue, drogue, alcool, orgueil, téléphone… ). Une diminution du stress pour les conducteurs, finis de klaxonner et d’insulter les autres conducteurs. Une accessibilité accrue pour les personnes en situation de handicap mental ou moteur. Et une fluidification du trafic ainsi que des économies de carburant, l’ia pouvant adopter une conduite économique et optimale. Cependant, cette technologie n'est pas dénuée de défis et de risques, comme la perspective de voir des emplois dans le secteur du transport (camionneur, taxi, uber ect…) remplacés par des machines, forçant de nombreuses personnes au chômage. Cependant le plus grand risque provient des possibilités de piratage pouvant avoir des conséquences dramatiques (prise en otages, voiture kamikaze, ect..). Sur le plan légal, la question de la responsabilité en cas d'accident impliquant une voiture autonome reste entière, est ce le passager ? la voiture ? la marque ? le programmeur du système ?. De plus, la capacité de ces véhicules à prendre des décisions éthiques en situation critique, tel le dilemme de devoir choisir entre la vie de passagers ou celle de piétons, soulève des questions morales complexes auxquelles nous ne sommes pas encore prêts à répondre, ni à assumer la responsabilité."
+            },
+            {"conslusion" : "En conclusion, la voiture autonome représente à la fois une promesse d'avenir radieux et un champ de questionnements inédits. Si les défis sont de taille, ils ne sont pas insurmontables. L'innovation technologique, accompagnée de cadres réglementaires adaptés et d'une réflexion éthique approfondie, peut ouvrir la voie à une mobilité plus sûre, plus inclusive et plus durable. L'avenir de la voiture autonome, bien qu'incertain, est empreint d'un optimisme prudent, invitant à une exploration continue des possibles qu'offre cette révolution technologique."
+            }
+          ],
+          "source": [
+              {
+                  "nom": "Source 1",
+                  "lien": "https://www.youtube.com/@AIDRIVRClips"
+              },
+              {
+                  "nom": "Source 2",
+                  "lien": "https://www.oscaronews.com/voitures-autonomes-avantages-et-inconvenients/"
+              },
+              {
+                  "nom": "Source 3",
+                  "lien": "https://siecledigital.fr/2023/09/27/avantages-et-inconvenients-des-vehicules-autonomes/"
+              },
+              {
+                  "nom": "Source 4",
+                  "lien": "https://www.matmut.fr/assurance/auto/conseils/avantages-inconvenients-voitures-autonomes"
+              }
+          ]
+        }  
     ]
 }
